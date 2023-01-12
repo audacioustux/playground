@@ -10,11 +10,13 @@ class Main {
 		var engine = Engine.newBuilder().build();
 
 		var noop = Files.readAllBytes(Path.of("./noop.wasm"));
-		var source = Source.newBuilder("wasm", ByteSequence.create(noop), "noop.wasm").build();
+		// var wasmSource = Source.newBuilder("wasm", ByteSequence.create(noop),
+		// "noop.wasm").build();
+		var jsSource = Source.newBuilder("js", "", "noop.mjs").build();
 
 		for (int i = 0; i < 1000000; i++) {
 			try (var context = Context.newBuilder().engine(engine).build()) {
-				var module = context.parse(source);
+				var module = context.parse(jsSource);
 				module.execute();
 			}
 		}
@@ -25,7 +27,7 @@ class Main {
 		var start = System.nanoTime();
 		for (int i = 0; i < 1000; i++) {
 			try (var context = Context.newBuilder().engine(engine).build()) {
-				var module = context.parse(source);
+				var module = context.parse(jsSource);
 				module.execute();
 			}
 		}
@@ -38,7 +40,7 @@ class Main {
 		start = System.nanoTime();
 		for (int i = 0; i < 1000; i++) {
 			var context = Context.newBuilder().engine(engine).build();
-			var module = context.parse(source);
+			var module = context.parse(jsSource);
 			module.execute();
 		}
 		end = System.nanoTime();
