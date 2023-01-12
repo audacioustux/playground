@@ -13,36 +13,45 @@ import AgentBench._
 @BenchmarkMode(Array(Mode.Throughput))
 @Fork(1)
 @Threads(1)
-@Warmup(iterations = 10, time = 5, timeUnit = TimeUnit.SECONDS, batchSize = 1)
+@Warmup(iterations = 2, time = 10, timeUnit = TimeUnit.SECONDS, batchSize = 1)
 @Measurement(
-  iterations = 10,
-  time = 15,
+  iterations = 2,
+  time = 10,
   timeUnit = TimeUnit.SECONDS,
   batchSize = 1
 )
 class AgentBenchJMH {
-  private var noop = Files.readAllBytes(
-    Path.of("/workspaces/playground/wasm-latency/noop.wasm")
-  );
+  @Benchmark
+  @OperationsPerInvocation(1000)
+  def jsAgentBench(): Unit = {
+    val source = Source
+      .newBuilder("js", "export const foo = () => 0;", "noop.js")
+      .mimeType("application/javascript+module")
+      .build()
 
-  val sources: Seq[Source] = Seq(
-    // Source
-    //   .newBuilder("js", "export const foo = () => 0;", "noop.js")
-    //   .mimeType("application/javascript+module")
-    //   .build(),
-    Source.newBuilder("wasm", ByteSequence.create(noop), "noop.wasm").build()
-  )
+    bench(
+      source,
+      numOfAgent = 1_000,
+      numOfRequest = 1_000,
+      numOfWarmup = 20
+    )
+  }
 
   @Benchmark
-  @OperationsPerInvocation(1_000 * 10)
-  def agentBench(): Unit = {
-    sources.foreach(source =>
-      bench(
-        source,
-        numOfAgent = 1_000,
-        numOfRequest = 1_000,
-        numOfWarmup = 10
-      )
+  @OperationsPerInvocation(1000)
+  def wasmAgentBench(): Unit = {
+    var noop = Files.readAllBytes(
+      Path.of("/workspaces/playground/wasm-latency/noop.wasm")
+    );
+
+    val source =
+      Source.newBuilder("wasm", ByteSequence.create(noop), "noop.wasm").build()
+
+    bench(
+      source,
+      numOfAgent = 1_000,
+      numOfRequest = 1_000,
+      numOfWarmup = 20
     )
   }
 }

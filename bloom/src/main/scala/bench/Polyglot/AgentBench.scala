@@ -51,9 +51,7 @@ object Agent {
 
       val executable =
         if source.getLanguage() == "js" then exports.getMember("foo");
-        else
-          println(polyCtx.getBindings("wasm").getMember("main").getMemberKeys())
-          polyCtx.getBindings("wasm").getMember("main").getMember("foo");
+        else polyCtx.getBindings("wasm").getMember("main").getMember("foo");
 
       replyTo ! Ready(ctx.self)
 

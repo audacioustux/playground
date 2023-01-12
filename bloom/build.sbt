@@ -24,7 +24,7 @@ lazy val root = project
         "--pgo=/Users/tanjimhossain/Bytes/poc-wormhole/bloom/default.iprof"
       ),
     javaOptions ++= Seq(
-      "-Xmx8G"
+      "-Xmx16G"
       // "-truffle"
       // "--cpusampler"
     ),
