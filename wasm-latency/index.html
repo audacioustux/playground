@@ -12,7 +12,11 @@
     <script>
         (async () => {
             const response = await fetch("noop.wasm", { cache: "force-cache" });
-            const module = await WebAssembly.compile(response);
+            const module = await WebAssembly.compileStreaming(response);
+
+            for (let i = 0; i < 1_000_000; i++) {
+                const instance = await WebAssembly.instantiate(module, {})
+            }
 
             const start = performance.now();
 
