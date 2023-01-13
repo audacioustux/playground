@@ -32,21 +32,22 @@ class AgentBenchJMH {
 
     bench(
       source,
-      numOfAgent = 1_000,
+      numOfAgent = 1,
       numOfRequest = 1_000,
       numOfWarmup = 20
     )
   }
+
   @Benchmark
   def jsAgentBench(): Unit = {
     val source = Source
-      .newBuilder("js", "export const foo = () => 0;", "noop.js")
+      .newBuilder("js", "export const foo = (n) => n + 1;", "noop.js")
       .mimeType("application/javascript+module")
       .build()
 
     bench(
       source,
-      numOfAgent = 1_000,
+      numOfAgent = 1,
       numOfRequest = 1_000,
       numOfWarmup = 20
     )

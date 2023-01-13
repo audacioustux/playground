@@ -72,14 +72,19 @@ class Agent(
     }
   }
 
+  var result = 0
+
   private def active(left: Int): Behavior[Request] =
     Behaviors.receiveMessagePartial { case Execute =>
       if (left > 0)
-        executable.execute()
+        result = executable.execute(result).asInt()
         ctx.self ! Execute
         active(left - 1)
       else
-        replyTo ! Completed; ready
+        replyTo ! Completed;
+        println(s"Agent completed with result: $result")
+        result = 0 
+        ready
     }
 }
 
