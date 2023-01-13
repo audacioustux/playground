@@ -9,25 +9,7 @@
 </head>
 
 <body>
-    <script>
-        (async () => {
-            const response = await fetch("noop.wasm", { cache: "force-cache" });
-            const module = await WebAssembly.compileStreaming(response);
-
-            for (let i = 0; i < 1_000_000; i++) {
-                const instance = await WebAssembly.instantiate(module, {})
-            }
-
-            const start = performance.now();
-
-            for (let i = 0; i < 1_000; i++) {
-                const instance = await WebAssembly.instantiate(module, {})
-            }
-
-            const end = performance.now();
-            console.log("WASM Latency: " + (end - start) + "ms");
-        })();
-    </script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
