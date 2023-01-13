@@ -36,32 +36,16 @@ object Agent {
       source: Source
   ): Behavior[Request] =
     Behaviors.setup(ctx =>
-      val polyCtxBuilder = Context
-        .newBuilder()
-        .engine(engine)
-
-      val polyCtx = polyCtxBuilder
-        .allowExperimentalOptions(true)
-        .option("js.esm-eval-returns-exports", "true")
-        .allowIO(true)
-        .build()
-
-      val sourceAst = polyCtx.parse(source)
-      val exports = sourceAst.execute()
-
-      val executable =
-        if source.getLanguage() == "js" then exports.getMember("foo");
-        else polyCtx.getBindings("wasm").getMember("main").getMember("foo");
-
       replyTo ! Ready(ctx.self)
 
-      new Agent(ctx, replyTo, executable).ready
+      // new Agent(ctx, replyTo, executable).ready
+      new Agent(ctx, replyTo, source).ready
     )
 }
 class Agent(
     ctx: ActorContext[Agent.Request],
     replyTo: ActorRef[Agent.Event],
-    executable: Value
+    source: Source
 ) {
   import Agent._
 
@@ -77,12 +61,29 @@ class Agent(
   private def active(left: Int): Behavior[Request] =
     Behaviors.receiveMessagePartial { case Execute =>
       if (left > 0)
+        val polyCtxBuilder = Context
+          .newBuilder()
+          .engine(engine)
+
+        val polyCtx = polyCtxBuilder
+          .allowExperimentalOptions(true)
+          .option("js.esm-eval-returns-exports", "true")
+          .allowIO(true)
+          .build()
+
+        val sourceAst = polyCtx.parse(source)
+        val exports = sourceAst.execute()
+
+        val executable =
+          if source.getLanguage() == "js" then exports.getMember("foo");
+          else polyCtx.getBindings("wasm").getMember("main").getMember("foo");
+
         result = executable.execute(result).asInt()
         ctx.self ! Execute
         active(left - 1)
       else
         replyTo ! Completed;
-        println(s"Agent completed with result: $result")
+        // println(s"Agent completed with result: $result")
         result = 0 
         ready
     }

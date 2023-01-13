@@ -1,0 +1,782 @@
+[info] welcome to sbt 1.6.1 (Oracle Corporation Java 17.0.5)
+[info] loading global plugins from /Users/tanjimhossain/.sbt/1.0/plugins
+[info] loading settings for project bloom-build from plugins.sbt ...
+[info] loading project definition from /Users/tanjimhossain/Bytes/playground/bloom/project
+[info] loading settings for project root from build.sbt ...
+[info] set current project to bloom (in build file:/Users/tanjimhossain/Bytes/playground/bloom/)
+[warn] sbt 0.13 shell syntax is deprecated; use slash syntax instead: Jmh / run
+[info] compiling 6 Java sources to /Users/tanjimhossain/Bytes/playground/bloom/target/scala-3.2.1/classes ...
+[info] done compiling
+[info] running (fork) org.openjdk.jmh.Main bench.Polyglot.AgentBenchJMH
+[info] # JMH version: 1.32
+[info] # VM version: JDK 17.0.5, Java HotSpot(TM) 64-Bit Server VM, 17.0.5+9-LTS-jvmci-22.3-b07
+[info] # VM invoker: /Users/tanjimhossain/Bytes/graalvm-ee-java17-22.3.0/Contents/Home/bin/java
+[info] # VM options: -XX:ThreadPriorityPolicy=1 -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCIProduct -XX:JVMCIThreadsPerNativeLibraryRuntime=1 -XX:-UnlockExperimentalVMOptions -Xmx16G
+[info] # Blackhole mode: full + dont-inline hint
+[info] # Warmup: 5 iterations, 5 s each
+[info] # Measurement: 1 iterations, 10 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.Polyglot.AgentBenchJMH.jsAgentBench
+[info] # Run progress: 0.00% complete, ETA 00:01:10
+[info] # Fork: 1 of 1
+[info] Java HotSpot(TM) 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
+[info] # Warmup Iteration   1: noop.js
+[info] 00:17:40.023 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[error] SLF4J: A number (1) of logging calls during the initialization phase have been intercepted and are
+[error] SLF4J: now being replayed. These are subject to the filtering rules of the underlying logging system.
+[error] SLF4J: See also http://www.slf4j.org/codes.html#replay
+[info]   1000 times executed by 1000 Agent took 1887382 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 425492 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 400168 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 220947 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 211337 us, 0.00 M event-reaction/sec
+[info] 00:17:43.513 [bench-akka.actor.default-dispatcher-11] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:43.596 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 181907 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 173138 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 177612 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 157924 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 151457 us, 0.01 M event-reaction/sec
+[info] 00:17:44.484 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] 0.387 ops/s
+[info] # Warmup Iteration   2: noop.js
+[info] 00:17:44.521 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 127037 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 165631 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 138718 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 187864 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 165743 us, 0.01 M event-reaction/sec
+[info] 00:17:45.352 [bench-akka.actor.default-dispatcher-6] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:45.373 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 108177 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 150034 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 162857 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 144551 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 114677 us, 0.01 M event-reaction/sec
+[info] 00:17:46.092 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:46.120 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 136082 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 67816 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 114267 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 112515 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 127522 us, 0.01 M event-reaction/sec
+[info] 00:17:46.765 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:46.785 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 126113 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 111269 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 126367 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 105451 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 113022 us, 0.01 M event-reaction/sec
+[info] 00:17:47.406 [bench-akka.actor.default-dispatcher-12] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:47.429 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 101644 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 103117 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 105867 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 131846 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 112074 us, 0.01 M event-reaction/sec
+[info] 00:17:48.027 [bench-akka.actor.default-dispatcher-10] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:48.045 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 76432 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 115526 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 125525 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 111113 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 104599 us, 0.01 M event-reaction/sec
+[info] 00:17:48.652 [bench-akka.actor.default-dispatcher-6] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:48.677 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 105440 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 112057 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 102105 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 115169 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 103925 us, 0.01 M event-reaction/sec
+[info] 00:17:49.259 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:49.283 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 81875 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 103011 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 99569 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 108180 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 129517 us, 0.01 M event-reaction/sec
+[info] 00:17:49.856 [bench-akka.actor.default-dispatcher-11] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] 1.492 ops/s
+[info] # Warmup Iteration   3: noop.js
+[info] 00:17:49.880 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 131327 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 73052 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 107837 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 107765 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 107421 us, 0.01 M event-reaction/sec
+[info] 00:17:50.486 [bench-akka.actor.default-dispatcher-3] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:50.504 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 87843 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 102025 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 119579 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 112813 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 102009 us, 0.01 M event-reaction/sec
+[info] 00:17:51.067 [bench-akka.actor.default-dispatcher-9] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:51.089 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 98302 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 88038 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 98361 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 100655 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 112091 us, 0.01 M event-reaction/sec
+[info] 00:17:51.626 [bench-akka.actor.default-dispatcher-6] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:51.644 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 21024 us, 0.05 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 96680 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 92497 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 94693 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 95960 us, 0.01 M event-reaction/sec
+[info] 00:17:52.176 [bench-akka.actor.default-dispatcher-9] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:52.198 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 89747 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 103507 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 109449 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 101486 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 102229 us, 0.01 M event-reaction/sec
+[info] 00:17:52.747 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:52.765 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 99923 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 99543 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 99588 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 100980 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 94085 us, 0.01 M event-reaction/sec
+[info] 00:17:53.294 [bench-akka.actor.default-dispatcher-8] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:53.308 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 92732 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 84780 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 93996 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 101918 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 87676 us, 0.01 M event-reaction/sec
+[info] 00:17:53.804 [bench-akka.actor.default-dispatcher-10] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:53.833 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 96144 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 89060 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 82142 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 104304 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 105588 us, 0.01 M event-reaction/sec
+[info] 00:17:54.357 [bench-akka.actor.default-dispatcher-3] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:54.376 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 76054 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 57888 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 85113 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 94297 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 90618 us, 0.01 M event-reaction/sec
+[info] 00:17:54.849 [bench-akka.actor.default-dispatcher-3] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:54.873 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 83025 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 88809 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 100869 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 113959 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 104224 us, 0.01 M event-reaction/sec
+[info] 00:17:55.394 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] 1.805 ops/s
+[info] # Warmup Iteration   4: noop.js
+[info] 00:17:55.417 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 79424 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 87400 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 87959 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 86391 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 128769 us, 0.01 M event-reaction/sec
+[info] 00:17:55.931 [bench-akka.actor.default-dispatcher-11] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:55.952 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 82823 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 84879 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 77578 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 102930 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 89214 us, 0.01 M event-reaction/sec
+[info] 00:17:56.418 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:56.435 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 76146 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 76773 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 91527 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 62427 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 110140 us, 0.01 M event-reaction/sec
+[info] 00:17:56.907 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:56.929 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 78074 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 83492 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 85902 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 86473 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 96778 us, 0.01 M event-reaction/sec
+[info] 00:17:57.387 [bench-akka.actor.default-dispatcher-5] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:57.404 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 99176 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 82351 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 86277 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 81537 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 101135 us, 0.01 M event-reaction/sec
+[info] 00:17:57.897 [bench-akka.actor.default-dispatcher-5] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:57.917 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 97074 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 90278 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 89880 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 82313 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 85859 us, 0.01 M event-reaction/sec
+[info] 00:17:58.394 [bench-akka.actor.default-dispatcher-10] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:58.411 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 104184 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 82429 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 81370 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 82951 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 106513 us, 0.01 M event-reaction/sec
+[info] 00:17:58.899 [bench-akka.actor.default-dispatcher-9] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:58.916 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 1255 us, 0.80 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 74916 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 100244 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 82087 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 82781 us, 0.01 M event-reaction/sec
+[info] 00:17:59.366 [bench-akka.actor.default-dispatcher-5] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:59.388 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 62169 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 70153 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 83728 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 99519 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 73596 us, 0.01 M event-reaction/sec
+[info] 00:17:59.826 [bench-akka.actor.default-dispatcher-8] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:17:59.842 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 29063 us, 0.03 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 67935 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 64767 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 76209 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 71318 us, 0.01 M event-reaction/sec
+[info] 00:18:00.304 [bench-akka.actor.default-dispatcher-3] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:00.327 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 83905 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 62309 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 82746 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 81454 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 82835 us, 0.01 M event-reaction/sec
+[info] 00:18:00.766 [bench-akka.actor.default-dispatcher-5] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] 2.051 ops/s
+[info] # Warmup Iteration   5: noop.js
+[info] 00:18:00.781 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 87175 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 94287 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 80204 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 70638 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 86736 us, 0.01 M event-reaction/sec
+[info] 00:18:01.244 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:01.264 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 72044 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 61930 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 85868 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 82867 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 71974 us, 0.01 M event-reaction/sec
+[info] 00:18:01.695 [bench-akka.actor.default-dispatcher-5] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:01.708 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 69657 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 77642 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 91728 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 61348 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 96437 us, 0.01 M event-reaction/sec
+[info] 00:18:02.165 [bench-akka.actor.default-dispatcher-6] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:02.181 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 69110 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 68508 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 70332 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 77064 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 88770 us, 0.01 M event-reaction/sec
+[info] 00:18:02.599 [bench-akka.actor.default-dispatcher-3] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:02.614 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 89480 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 89058 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 92554 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 66353 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 81386 us, 0.01 M event-reaction/sec
+[info] 00:18:03.075 [bench-akka.actor.default-dispatcher-8] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:03.098 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 73445 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 75172 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 88389 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 55920 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 82782 us, 0.01 M event-reaction/sec
+[info] 00:18:03.527 [bench-akka.actor.default-dispatcher-9] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:03.541 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 61837 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 73910 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 85530 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 110090 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 81655 us, 0.01 M event-reaction/sec
+[info] 00:18:03.992 [bench-akka.actor.default-dispatcher-3] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:04.005 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 71226 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 75260 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 62904 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 64052 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 77927 us, 0.01 M event-reaction/sec
+[info] 00:18:04.404 [bench-akka.actor.default-dispatcher-10] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:04.419 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 93125 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 99032 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 90053 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 71253 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 86366 us, 0.01 M event-reaction/sec
+[info] 00:18:04.923 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:04.944 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 93112 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 92439 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 94578 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 79507 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 80416 us, 0.01 M event-reaction/sec
+[info] 00:18:05.409 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:05.426 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 66222 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 51205 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 56850 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 77370 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 74017 us, 0.01 M event-reaction/sec
+[info] 00:18:05.830 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] 2.170 ops/s
+[info] Iteration   1: noop.js
+[info] 00:18:05.855 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 86973 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 73309 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 78359 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 77551 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 78933 us, 0.01 M event-reaction/sec
+[info] 00:18:06.284 [bench-akka.actor.default-dispatcher-10] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:06.305 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 76321 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 66904 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 65142 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 94982 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 74448 us, 0.01 M event-reaction/sec
+[info] 00:18:06.727 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:06.738 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 67365 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 89989 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 79758 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 80189 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 84590 us, 0.01 M event-reaction/sec
+[info] 00:18:07.175 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:07.192 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 100887 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 77468 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 82061 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 71604 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 85294 us, 0.01 M event-reaction/sec
+[info] 00:18:07.632 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:07.645 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 69135 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 71055 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 92208 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 99041 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 74009 us, 0.01 M event-reaction/sec
+[info] 00:18:08.072 [bench-akka.actor.default-dispatcher-9] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:08.094 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 105927 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 102372 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 77732 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 76457 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 79599 us, 0.01 M event-reaction/sec
+[info] 00:18:08.563 [bench-akka.actor.default-dispatcher-3] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:08.583 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 78883 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 57865 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 45494 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 87936 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 69900 us, 0.01 M event-reaction/sec
+[info] 00:18:09.015 [bench-akka.actor.default-dispatcher-10] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:09.026 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 68556 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 72366 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 77314 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 88833 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 2247 us, 0.45 M event-reaction/sec
+[info] 00:18:09.437 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:09.449 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 68406 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 65624 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 68349 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 72485 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 79684 us, 0.01 M event-reaction/sec
+[info] 00:18:09.839 [bench-akka.actor.default-dispatcher-5] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:09.854 [bench-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 76053 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 84534 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 61157 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 80645 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 78526 us, 0.01 M event-reaction/sec
+[info] 00:18:10.274 [bench-akka.actor.default-dispatcher-8] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:10.286 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 69085 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 51974 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 67531 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 70998 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 85898 us, 0.01 M event-reaction/sec
+[info] 00:18:10.682 [bench-akka.actor.default-dispatcher-5] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:10.700 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 69573 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 70052 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 91731 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 73429 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 69405 us, 0.01 M event-reaction/sec
+[info] 00:18:11.100 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:11.113 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 68925 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 82581 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 75012 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 75799 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 75416 us, 0.01 M event-reaction/sec
+[info] 00:18:11.509 [bench-akka.actor.default-dispatcher-3] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:11.526 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 69622 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 70683 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 73586 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 76214 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 106689 us, 0.01 M event-reaction/sec
+[info] 00:18:11.941 [bench-akka.actor.default-dispatcher-10] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:11.959 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 67288 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 68474 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 66877 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 59566 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 75273 us, 0.01 M event-reaction/sec
+[info] 00:18:12.344 [bench-akka.actor.default-dispatcher-3] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:12.361 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 68208 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 68261 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 88039 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 83816 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 76672 us, 0.01 M event-reaction/sec
+[info] 00:18:12.765 [bench-akka.actor.default-dispatcher-5] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:12.775 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 70360 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 85110 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 82499 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 77829 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 92951 us, 0.01 M event-reaction/sec
+[info] 00:18:13.202 [bench-akka.actor.default-dispatcher-8] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:13.218 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 70150 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 46305 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 61223 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 75292 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 75143 us, 0.01 M event-reaction/sec
+[info] 00:18:13.607 [bench-akka.actor.default-dispatcher-10] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:13.622 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 66704 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 64704 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 88489 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 57218 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 75165 us, 0.01 M event-reaction/sec
+[info] 00:18:14.021 [bench-akka.actor.default-dispatcher-11] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:14.037 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 76164 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 74611 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 76966 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 74733 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 75727 us, 0.01 M event-reaction/sec
+[info] 00:18:14.436 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:14.449 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 81653 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 53509 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 62425 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 77081 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 76720 us, 0.01 M event-reaction/sec
+[info] 00:18:14.841 [bench-akka.actor.default-dispatcher-11] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:14.853 [bench-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 80194 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 50363 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 90006 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 83931 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 76450 us, 0.01 M event-reaction/sec
+[info] 00:18:15.272 [bench-akka.actor.default-dispatcher-8] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:15.286 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 67630 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 60976 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 72829 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 76247 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 80062 us, 0.01 M event-reaction/sec
+[info] 00:18:15.672 [bench-akka.actor.default-dispatcher-3] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.js
+[info] 00:18:15.680 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 76024 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 70526 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 88289 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 77542 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 81941 us, 0.01 M event-reaction/sec
+[info] 00:18:16.088 [bench-akka.actor.default-dispatcher-3] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] 2.341 ops/s
+[info] Result "bench.Polyglot.AgentBenchJMH.jsAgentBench":
+[info]   2.341 ops/s
+[info] # JMH version: 1.32
+[info] # VM version: JDK 17.0.5, Java HotSpot(TM) 64-Bit Server VM, 17.0.5+9-LTS-jvmci-22.3-b07
+[info] # VM invoker: /Users/tanjimhossain/Bytes/graalvm-ee-java17-22.3.0/Contents/Home/bin/java
+[info] # VM options: -XX:ThreadPriorityPolicy=1 -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCIProduct -XX:JVMCIThreadsPerNativeLibraryRuntime=1 -XX:-UnlockExperimentalVMOptions -Xmx16G
+[info] # Blackhole mode: full + dont-inline hint
+[info] # Warmup: 5 iterations, 5 s each
+[info] # Measurement: 1 iterations, 10 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.Polyglot.AgentBenchJMH.wasmAgentBench
+[info] # Run progress: 50.00% complete, ETA 00:00:37
+[info] # Fork: 1 of 1
+[info] Java HotSpot(TM) 64-Bit Server VM warning: -XX:ThreadPriorityPolicy=1 may require system level permission, e.g., being the root user. If the necessary permission is not possessed, changes to priority will be silently ignored.
+[info] # Warmup Iteration   1: noop.wasm
+[info] 00:18:17.165 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[error] SLF4J: A number (1) of logging calls during the initialization phase have been intercepted and are
+[error] SLF4J: now being replayed. These are subject to the filtering rules of the underlying logging system.
+[error] SLF4J: See also http://www.slf4j.org/codes.html#replay
+[info]   1000 times executed by 1000 Agent took 910322 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 320077 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 392912 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 387106 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 158940 us, 0.01 M event-reaction/sec
+[info] 00:18:19.607 [bench-akka.actor.default-dispatcher-8] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.wasm
+[info] 00:18:19.690 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 373855 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 174014 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 421599 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 85652 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 349980 us, 0.00 M event-reaction/sec
+[info] 00:18:21.136 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.wasm
+[info] 00:18:21.163 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 299472 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 143186 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 426692 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 111123 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 487356 us, 0.00 M event-reaction/sec
+[info] 00:18:22.675 [bench-akka.actor.default-dispatcher-10] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] 0.483 ops/s
+[info] # Warmup Iteration   2: noop.wasm
+[info] 00:18:22.705 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 69716 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 323916 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 75628 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 346615 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 86347 us, 0.01 M event-reaction/sec
+[info] 00:18:23.642 [bench-akka.actor.default-dispatcher-11] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.wasm
+[info] 00:18:23.659 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 365866 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 104333 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 130013 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 512417 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 75444 us, 0.01 M event-reaction/sec
+[info] 00:18:24.881 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.wasm
+[info] 00:18:24.903 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 117126 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 465582 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 92872 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 374811 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 58771 us, 0.02 M event-reaction/sec
+[info] 00:18:26.045 [bench-akka.actor.default-dispatcher-10] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.wasm
+[info] 00:18:26.068 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 453542 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 56336 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 64040 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 85736 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 103749 us, 0.01 M event-reaction/sec
+[info] 00:18:27.282 [bench-akka.actor.default-dispatcher-9] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.wasm
+[info] 00:18:27.303 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 84138 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 93828 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 585082 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 67129 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 82586 us, 0.01 M event-reaction/sec
+[info] 00:18:28.251 [bench-akka.actor.default-dispatcher-5] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] 0.897 ops/s
+[info] # Warmup Iteration   3: noop.wasm
+[info] 00:18:28.278 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 609695 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 28851 us, 0.03 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 67613 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 71531 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 725543 us, 0.00 M event-reaction/sec
+[info] 00:18:29.880 [bench-akka.actor.default-dispatcher-6] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.wasm
+[info] 00:18:29.903 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 65225 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 80713 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 53737 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 589953 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 146105 us, 0.01 M event-reaction/sec
+[info] 00:18:30.894 [bench-akka.actor.default-dispatcher-5] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.wasm
+[info] 00:18:30.917 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 97304 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 121707 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 1224714 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 76516 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 101255 us, 0.01 M event-reaction/sec
+[info] 00:18:32.608 [bench-akka.actor.default-dispatcher-10] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.wasm
+[info] 00:18:32.643 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 64345 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 1394456 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 1125305 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 12825 us, 0.08 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 54223 us, 0.02 M event-reaction/sec
+[info] 00:18:35.453 [bench-akka.actor.default-dispatcher-6] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] 0.556 ops/s
+[info] # Warmup Iteration   4: noop.wasm
+[info] 00:18:35.467 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 1254605 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 55115 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 57449 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 57470 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 56822 us, 0.02 M event-reaction/sec
+[info] 00:18:36.984 [bench-akka.actor.default-dispatcher-3] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.wasm
+[info] 00:18:38.051 [bench-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 389208 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 53500 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 54525 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 76991 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 404384 us, 0.00 M event-reaction/sec
+[info] 00:18:40.253 [bench-akka.actor.default-dispatcher-8] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.wasm
+[info] 00:18:40.277 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 133085 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 280784 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 476512 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 1736831 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 58131 us, 0.02 M event-reaction/sec
+[info] 00:18:43.020 [bench-akka.actor.default-dispatcher-10] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] 0.396 ops/s
+[info] # Warmup Iteration   5: noop.wasm
+[info] 00:18:43.043 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 54211 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 51296 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 1573449 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 74929 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 23623 us, 0.04 M event-reaction/sec
+[info] 00:18:44.936 [bench-akka.actor.default-dispatcher-10] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.wasm
+[info] 00:18:44.959 [bench-akka.actor.default-dispatcher-6] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 64319 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 17844 us, 0.06 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 1628693 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 55822 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 66644 us, 0.02 M event-reaction/sec
+[info] 00:18:46.871 [bench-akka.actor.default-dispatcher-3] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.wasm
+[info] 00:18:46.919 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 51464 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 1252372 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 395520 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 375221 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 257502 us, 0.00 M event-reaction/sec
+[info] 00:18:49.283 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] 0.478 ops/s
+[info] Iteration   1: noop.wasm
+[info] 00:18:49.317 [bench-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 79432 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 714493 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 59924 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 74395 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 59049 us, 0.02 M event-reaction/sec
+[info] 00:18:50.341 [bench-akka.actor.default-dispatcher-5] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.wasm
+[info] 00:18:50.359 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 50660 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 1121383 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 50607 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 59211 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 57185 us, 0.02 M event-reaction/sec
+[info] 00:18:51.731 [bench-akka.actor.default-dispatcher-6] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.wasm
+[info] 00:18:51.753 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 703551 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 55181 us, 0.02 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 725 us, 1.38 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 66958 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 174610 us, 0.01 M event-reaction/sec
+[info] 00:18:52.835 [bench-akka.actor.default-dispatcher-3] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.wasm
+[info] 00:18:52.863 [bench-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 761603 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 370163 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 141784 us, 0.01 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 459973 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 100915 us, 0.01 M event-reaction/sec
+[info] 00:18:54.755 [bench-akka.actor.default-dispatcher-7] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] noop.wasm
+[info] 00:18:54.782 [bench-akka.actor.default-dispatcher-3] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[info]   1000 times executed by 1000 Agent took 287689 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 234284 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 346265 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 357618 us, 0.00 M event-reaction/sec
+[info]   1000 times executed by 1000 Agent took 44567671 us, 0.00 M event-reaction/sec
+[info] 00:19:40.632 [bench-akka.actor.default-dispatcher-10] INFO akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+[info] 0.097 ops/s
+[info] Result "bench.Polyglot.AgentBenchJMH.wasmAgentBench":
+[info]   0.097 ops/s
+[info] # Run complete. Total time: 00:02:03
+[info] REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+[info] why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+[info] experiments, perform baseline and negative tests that provide experimental control, make sure
+[info] the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+[info] Do not assume the numbers tell you what you want them to tell.
+[info] Benchmark                               Mode  Cnt  Score   Error  Units
+[info] Polyglot.AgentBenchJMH.jsAgentBench    thrpt       2.341          ops/s
+[info] Polyglot.AgentBenchJMH.wasmAgentBench  thrpt       0.097          ops/s
+[success] Total time: 127 s (02:07), completed Jan 14, 2023, 12:19:42 AM

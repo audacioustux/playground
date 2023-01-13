@@ -13,9 +13,9 @@ import AgentBench._
 @BenchmarkMode(Array(Mode.Throughput))
 @Fork(1)
 @Threads(1)
-@Warmup(iterations = 2, time = 10, timeUnit = TimeUnit.SECONDS, batchSize = 1)
+@Warmup(iterations = 5, time = 5, timeUnit = TimeUnit.SECONDS, batchSize = 1)
 @Measurement(
-  iterations = 2,
+  iterations = 1,
   time = 10,
   timeUnit = TimeUnit.SECONDS,
   batchSize = 1
@@ -31,9 +31,9 @@ class AgentBenchJMH {
 
     bench(
       source,
-      numOfAgent = 1,
-      numOfRequest = 1_000,
-      numOfWarmup = 20
+      numOfAgent = 1000,
+      numOfRequest = 1000,
+      numOfWarmup = 5
     )
   }
 
@@ -46,9 +46,9 @@ class AgentBenchJMH {
 
     bench(
       source,
-      numOfAgent = 1,
-      numOfRequest = 1_000,
-      numOfWarmup = 20
+      numOfAgent = 1000,
+      numOfRequest = 1000,
+      numOfWarmup = 5
     )
   }
 }
