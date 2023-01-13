@@ -24,11 +24,10 @@ class AgentBenchJMH {
   @Benchmark
   def wasmAgentBench(): Unit = {
     var noop = Files.readAllBytes(
-      Path.of("/workspaces/playground/wasm-latency/noop.wasm")
+      Path.of("../wasm-latency/noop.wasm")
     );
 
-    val source =
-      Source.newBuilder("wasm", ByteSequence.create(noop), "noop.wasm").build()
+    val source = Source.newBuilder("wasm", ByteSequence.create(noop), "noop.wasm").build()
 
     bench(
       source,
