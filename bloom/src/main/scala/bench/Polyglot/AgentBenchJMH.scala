@@ -22,12 +22,13 @@ import AgentBench._
 )
 class AgentBenchJMH {
   @Benchmark
-  @OperationsPerInvocation(1000)
-  def jsAgentBench(): Unit = {
-    val source = Source
-      .newBuilder("js", "export const foo = () => 0;", "noop.js")
-      .mimeType("application/javascript+module")
-      .build()
+  def wasmAgentBench(): Unit = {
+    var noop = Files.readAllBytes(
+      Path.of("/workspaces/playground/wasm-latency/noop.wasm")
+    );
+
+    val source =
+      Source.newBuilder("wasm", ByteSequence.create(noop), "noop.wasm").build()
 
     bench(
       source,
@@ -36,16 +37,12 @@ class AgentBenchJMH {
       numOfWarmup = 20
     )
   }
-
   @Benchmark
-  @OperationsPerInvocation(1000)
-  def wasmAgentBench(): Unit = {
-    var noop = Files.readAllBytes(
-      Path.of("/workspaces/playground/wasm-latency/noop.wasm")
-    );
-
-    val source =
-      Source.newBuilder("wasm", ByteSequence.create(noop), "noop.wasm").build()
+  def jsAgentBench(): Unit = {
+    val source = Source
+      .newBuilder("js", "export const foo = () => 0;", "noop.js")
+      .mimeType("application/javascript+module")
+      .build()
 
     bench(
       source,
