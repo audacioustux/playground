@@ -71,14 +71,16 @@ class Agent(
           .allowIO(true)
           .build()
 
-        val sourceAst = polyCtx.parse(source)
-        val exports = sourceAst.execute()
+        val exports = polyCtx.eval(source)
 
         val executable =
           if source.getLanguage() == "js" then exports.getMember("foo");
           else polyCtx.getBindings("wasm").getMember("main").getMember("foo");
 
         result = executable.execute(result).asInt()
+
+        // polyCtx.close()
+
         ctx.self ! Execute
         active(left - 1)
       else

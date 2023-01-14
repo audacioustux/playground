@@ -31,8 +31,8 @@ class AgentBenchJMH {
 
     bench(
       source,
-      numOfAgent = 1000,
-      numOfRequest = 1000,
+      numOfAgent = 500,
+      numOfRequest = 500,
       numOfWarmup = 5
     )
   }
@@ -46,8 +46,8 @@ class AgentBenchJMH {
 
     bench(
       source,
-      numOfAgent = 1000,
-      numOfRequest = 1000,
+      numOfAgent = 500,
+      numOfRequest = 500,
       numOfWarmup = 5
     )
   }
