@@ -3,13 +3,6 @@
 	"dockerComposeFile": "Compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-	"features": {
-		"ghcr.io/devcontainers/features/common-utils:2": {
-			"configureZshAsDefaultShell": true
-		},
-		"ghcr.io/devcontainers/features/github-cli:1": {},
-		"ghcr.io/devcontainers/features/rust:1": {}
-	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -23,7 +16,12 @@
 				"Gruntfuggly.todo-tree",
 				"GitHub.copilot",
 				"dtsvet.vscode-wasm",
-				"ritwickdey.LiveServer"
+				"ritwickdey.LiveServer",
+				"vadimcn.vscode-lldb",
+                "mutantdino.resourcemonitor",
+                "rust-lang.rust-analyzer",
+                "tamasfe.even-better-toml",
+                "serayuzgur.crates"
 			],
 			"settings": {
 				"git.autofetch": true,
@@ -31,7 +29,12 @@
 				"editor.formatOnSave": true,
 				"files.associations": {
 					"*.postcss": "css"
-				}
+				},
+				"lldb.executable": "/usr/bin/lldb",
+                "files.watcherExclude": {
+                    "**/target/**": true
+                },
+                "rust-analyzer.checkOnSave.command": "clippy"
 			}
 		}
 	}
