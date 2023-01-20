@@ -7,7 +7,8 @@
 		"ghcr.io/devcontainers/features/common-utils:2": {
 			"configureZshAsDefaultShell": true
 		},
-		"ghcr.io/devcontainers/features/github-cli:1": {}
+		"ghcr.io/devcontainers/features/github-cli:1": {},
+		"ghcr.io/devcontainers/features/rust:1": {}
 	},
 	"customizations": {
 		"vscode": {
@@ -23,15 +24,15 @@
 				"GitHub.copilot",
 				"dtsvet.vscode-wasm",
 				"ritwickdey.LiveServer"
-			]
-		}
-	},
-	"settings": {
-		"git.autofetch": true,
-		"files.autoSave": "onFocusChange",
-		"editor.formatOnSave": true,
-		"files.associations": {
-			"*.postcss": "css"
+			],
+			"settings": {
+				"git.autofetch": true,
+				"files.autoSave": "onFocusChange",
+				"editor.formatOnSave": true,
+				"files.associations": {
+					"*.postcss": "css"
+				}
+			}
 		}
 	}
 }
