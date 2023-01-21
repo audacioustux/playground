@@ -34,7 +34,7 @@ fn main() -> Result<(), Error> {
 
     let start = std::time::Instant::now();
 
-    let module_count = 1_000_000;
+    let module_count = 1;
 
     println!("Generating {} modules", module_count);
     let modules: Vec<Module> = (0..module_count).map(|i| module_gen(i).unwrap()).collect();

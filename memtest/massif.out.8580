@@ -1,0 +1,1548 @@
+desc: (none)
+cmd: ./target/release/wasmedge
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=899247
+mem_heap_B=1
+mem_heap_extra_B=23
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=913929
+mem_heap_B=1723
+mem_heap_extra_B=397
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=926647
+mem_heap_B=3104
+mem_heap_extra_B=600
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=938891
+mem_heap_B=4185
+mem_heap_extra_B=919
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=956370
+mem_heap_B=6875
+mem_heap_extra_B=1341
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=971174
+mem_heap_B=9007
+mem_heap_extra_B=1705
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=986932
+mem_heap_B=15879
+mem_heap_extra_B=2065
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=1000131
+mem_heap_B=16875
+mem_heap_extra_B=2381
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=1015165
+mem_heap_B=18689
+mem_heap_extra_B=2727
+mem_stacks_B=0
+heap_tree=detailed
+n4: 18689 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n7: 10333 0x672D3BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 5756 0x664F7E7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 5756 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n0: 5756 in 146 places, all below massif's threshold (1.00%)
+  n1: 3072 0x4DABDF7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 3072 0x4005623: call_init (dl-init.c:70)
+    n1: 3072 0x4005623: call_init (dl-init.c:26)
+     n1: 3072 0x400572B: _dl_init (dl-init.c:117)
+      n0: 3072 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+  n1: 336 0x66465DF: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 336 0x668C0BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n0: 336 in 2 places, all below massif's threshold (1.00%)
+  n1: 328 0x665031F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 328 0x668C0BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 328 0x664F9E7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 328 0x529B2D7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+      n1: 328 0x4005623: call_init (dl-init.c:70)
+       n1: 328 0x4005623: call_init (dl-init.c:26)
+        n1: 328 0x400572B: _dl_init (dl-init.c:117)
+         n0: 328 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+  n1: 316 0x674B0C7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n0: 316 in 3 places, all below massif's threshold (1.00%)
+  n0: 309 in 7 places, all below massif's threshold (1.00%)
+  n1: 216 0x4A10CAB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 216 0x4005623: call_init (dl-init.c:70)
+    n1: 216 0x4005623: call_init (dl-init.c:26)
+     n1: 216 0x400572B: _dl_init (dl-init.c:117)
+      n0: 216 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 5200 0x71CD0BF: __new_exitfn (cxa_atexit.c:114)
+  n5: 5200 0x71CD15B: __internal_atexit (cxa_atexit.c:44)
+   n1: 1040 0x4A1185F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A134D3: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A1517F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x529BC4B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x529DAFB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 3084 0x66A39F7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 3084 0x664F81B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n2: 3084 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 3084 0x4A12D63: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 3084 0x4005623: call_init (dl-init.c:70)
+      n1: 3084 0x4005623: call_init (dl-init.c:26)
+       n1: 3084 0x400572B: _dl_init (dl-init.c:117)
+        n0: 3084 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+    n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n0: 72 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=1026525
+mem_heap_B=20559
+mem_heap_extra_B=3057
+mem_stacks_B=0
+heap_tree=detailed
+n4: 20559 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n6: 11163 0x672D3BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 6514 0x664F7E7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 6514 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n0: 6514 in 164 places, all below massif's threshold (1.00%)
+  n1: 3072 0x4DABDF7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 3072 0x4005623: call_init (dl-init.c:70)
+    n1: 3072 0x4005623: call_init (dl-init.c:26)
+     n1: 3072 0x400572B: _dl_init (dl-init.c:117)
+      n0: 3072 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+  n0: 597 in 9 places, all below massif's threshold (1.00%)
+  n1: 336 0x66465DF: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 336 0x668C0BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n0: 336 in 2 places, all below massif's threshold (1.00%)
+  n1: 328 0x665031F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 328 0x668C0BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 328 0x664F9E7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 328 0x529B2D7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+      n1: 328 0x4005623: call_init (dl-init.c:70)
+       n1: 328 0x4005623: call_init (dl-init.c:26)
+        n1: 328 0x400572B: _dl_init (dl-init.c:117)
+         n0: 328 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+  n1: 316 0x674B0C7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n0: 316 in 3 places, all below massif's threshold (1.00%)
+ n1: 6240 0x71CD0BF: __new_exitfn (cxa_atexit.c:114)
+  n6: 6240 0x71CD15B: __internal_atexit (cxa_atexit.c:44)
+   n1: 1040 0x4A1185F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A134D3: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A1517F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A17307: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x529BC4B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x529DAFB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 3084 0x66A39F7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 3084 0x664F81B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n2: 3084 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 3084 0x4A12D63: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 3084 0x4005623: call_init (dl-init.c:70)
+      n1: 3084 0x4005623: call_init (dl-init.c:26)
+       n1: 3084 0x400572B: _dl_init (dl-init.c:117)
+        n0: 3084 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+    n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n0: 72 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=11
+#-----------
+time=1035792
+mem_heap_B=21112
+mem_heap_extra_B=3232
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=1048251
+mem_heap_B=28823
+mem_heap_extra_B=3505
+mem_stacks_B=0
+heap_tree=detailed
+n4: 28823 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n5: 12231 0x672D3BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 7582 0x664F7E7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 7582 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n0: 7582 in 191 places, all below massif's threshold (1.00%)
+  n1: 3072 0x4DABDF7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 3072 0x4005623: call_init (dl-init.c:70)
+    n1: 3072 0x4005623: call_init (dl-init.c:26)
+     n1: 3072 0x400572B: _dl_init (dl-init.c:117)
+      n0: 3072 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+  n0: 913 in 10 places, all below massif's threshold (1.00%)
+  n1: 336 0x66465DF: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 336 0x668C0BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n0: 336 in 2 places, all below massif's threshold (1.00%)
+  n1: 328 0x665031F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 328 0x668C0BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 328 0x664F9E7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 328 0x529B2D7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+      n1: 328 0x4005623: call_init (dl-init.c:70)
+       n1: 328 0x4005623: call_init (dl-init.c:26)
+        n1: 328 0x400572B: _dl_init (dl-init.c:117)
+         n0: 328 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 9240 0x66A39F7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 9240 0x664F81B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n3: 9240 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 6156 0x4A18BBB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 6156 0x4005623: call_init (dl-init.c:70)
+      n1: 6156 0x4005623: call_init (dl-init.c:26)
+       n1: 6156 0x400572B: _dl_init (dl-init.c:117)
+        n0: 6156 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+    n1: 3084 0x4A12D63: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 3084 0x4005623: call_init (dl-init.c:70)
+      n1: 3084 0x4005623: call_init (dl-init.c:26)
+       n1: 3084 0x400572B: _dl_init (dl-init.c:117)
+        n0: 3084 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+    n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n1: 7280 0x71CD0BF: __new_exitfn (cxa_atexit.c:114)
+  n7: 7280 0x71CD15B: __internal_atexit (cxa_atexit.c:44)
+   n1: 1040 0x4005623: call_init (dl-init.c:70)
+    n1: 1040 0x4005623: call_init (dl-init.c:26)
+     n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+      n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A1185F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A134D3: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A1517F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A17307: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x529BC4B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x529DAFB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n0: 72 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=1061804
+mem_heap_B=26686
+mem_heap_extra_B=3882
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=1076853
+mem_heap_B=28649
+mem_heap_extra_B=4319
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=1096509
+mem_heap_B=31027
+mem_heap_extra_B=4925
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=1110374
+mem_heap_B=32896
+mem_heap_extra_B=5328
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=1122912
+mem_heap_B=34686
+mem_heap_extra_B=5666
+mem_stacks_B=0
+heap_tree=detailed
+n4: 34686 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 17018 0x672D3BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 12340 0x664F7E7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 12340 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n0: 12340 in 320 places, all below massif's threshold (1.00%)
+  n1: 3072 0x4DABDF7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 3072 0x4005623: call_init (dl-init.c:70)
+    n1: 3072 0x4005623: call_init (dl-init.c:26)
+     n1: 3072 0x400572B: _dl_init (dl-init.c:117)
+      n0: 3072 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+  n0: 1606 in 12 places, all below massif's threshold (1.00%)
+ n1: 11440 0x71CD0BF: __new_exitfn (cxa_atexit.c:114)
+  n9: 11440 0x71CD15B: __internal_atexit (cxa_atexit.c:44)
+   n1: 3120 0x4005623: call_init (dl-init.c:70)
+    n1: 3120 0x4005623: call_init (dl-init.c:26)
+     n1: 3120 0x400572B: _dl_init (dl-init.c:117)
+      n0: 3120 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A1185F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A134D3: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A1517F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A17307: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A1ABB7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A1D88B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x529BC4B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x529DAFB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 6156 0x66A39F7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 6156 0x664F81B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n2: 6156 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 6156 0x4A18BBB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 6156 0x4005623: call_init (dl-init.c:70)
+      n1: 6156 0x4005623: call_init (dl-init.c:26)
+       n1: 6156 0x400572B: _dl_init (dl-init.c:117)
+        n0: 6156 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+    n0: 0 in 4 places, all below massif's threshold (1.00%)
+ n0: 72 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=18
+#-----------
+time=1141228
+mem_heap_B=36976
+mem_heap_extra_B=6160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=1158183
+mem_heap_B=39232
+mem_heap_extra_B=6616
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=1168785
+mem_heap_B=51657
+mem_heap_extra_B=6671
+mem_stacks_B=0
+heap_tree=detailed
+n4: 51657 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 19609 0x672D3BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 14894 0x664F7E7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 14894 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n0: 14894 in 383 places, all below massif's threshold (1.00%)
+  n1: 3072 0x4DABDF7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 3072 0x4005623: call_init (dl-init.c:70)
+    n1: 3072 0x4005623: call_init (dl-init.c:26)
+     n1: 3072 0x400572B: _dl_init (dl-init.c:117)
+      n0: 3072 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+  n0: 1643 in 12 places, all below massif's threshold (1.00%)
+ n1: 18456 0x66A39F7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 18456 0x664F81B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n3: 18456 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 12300 0x4A21DBB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 12300 0x4005623: call_init (dl-init.c:70)
+      n1: 12300 0x4005623: call_init (dl-init.c:26)
+       n1: 12300 0x400572B: _dl_init (dl-init.c:117)
+        n0: 12300 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+    n1: 6156 0x4A18BBB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 6156 0x4005623: call_init (dl-init.c:70)
+      n1: 6156 0x4005623: call_init (dl-init.c:26)
+       n1: 6156 0x400572B: _dl_init (dl-init.c:117)
+        n0: 6156 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+    n0: 0 in 4 places, all below massif's threshold (1.00%)
+ n1: 13520 0x71CD0BF: __new_exitfn (cxa_atexit.c:114)
+  n10: 13520 0x71CD15B: __internal_atexit (cxa_atexit.c:44)
+   n1: 4160 0x4005623: call_init (dl-init.c:70)
+    n1: 4160 0x4005623: call_init (dl-init.c:26)
+     n1: 4160 0x400572B: _dl_init (dl-init.c:117)
+      n0: 4160 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A1185F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A134D3: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A1517F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A17307: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A1ABB7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A1D88B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A2020F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x529BC4B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x529DAFB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n0: 72 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=1179799
+mem_heap_B=46377
+mem_heap_extra_B=6975
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=1196419
+mem_heap_B=48588
+mem_heap_extra_B=7444
+mem_stacks_B=0
+heap_tree=detailed
+n4: 48588 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 21656 0x672D3BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 16770 0x664F7E7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 16770 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n0: 16770 in 429 places, all below massif's threshold (1.00%)
+  n1: 3072 0x4DABDF7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 3072 0x4005623: call_init (dl-init.c:70)
+    n1: 3072 0x4005623: call_init (dl-init.c:26)
+     n1: 3072 0x400572B: _dl_init (dl-init.c:117)
+      n0: 3072 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+  n0: 1814 in 12 places, all below massif's threshold (1.00%)
+ n1: 14560 0x71CD0BF: __new_exitfn (cxa_atexit.c:114)
+  n11: 14560 0x71CD15B: __internal_atexit (cxa_atexit.c:44)
+   n1: 4160 0x4005623: call_init (dl-init.c:70)
+    n1: 4160 0x4005623: call_init (dl-init.c:26)
+     n1: 4160 0x400572B: _dl_init (dl-init.c:117)
+      n0: 4160 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A1185F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A134D3: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A1517F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A17307: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A1ABB7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A1D88B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A2020F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A22FB7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x529BC4B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x529DAFB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 12300 0x66A39F7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 12300 0x664F81B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n2: 12300 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 12300 0x4A21DBB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 12300 0x4005623: call_init (dl-init.c:70)
+      n1: 12300 0x4005623: call_init (dl-init.c:26)
+       n1: 12300 0x400572B: _dl_init (dl-init.c:117)
+        n0: 12300 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+    n0: 0 in 5 places, all below massif's threshold (1.00%)
+ n0: 72 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=23
+#-----------
+time=1207453
+mem_heap_B=50368
+mem_heap_extra_B=7744
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=1220113
+mem_heap_B=52281
+mem_heap_extra_B=7943
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=1232840
+mem_heap_B=52537
+mem_heap_extra_B=7951
+mem_stacks_B=0
+heap_tree=detailed
+n5: 52537 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 22854 0x672D3BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 17936 0x664F7E7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 17936 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n0: 17936 in 460 places, all below massif's threshold (1.00%)
+  n1: 3072 0x4DABDF7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 3072 0x4005623: call_init (dl-init.c:70)
+    n1: 3072 0x4005623: call_init (dl-init.c:26)
+     n1: 3072 0x400572B: _dl_init (dl-init.c:117)
+      n0: 3072 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+  n0: 1846 in 13 places, all below massif's threshold (1.00%)
+ n1: 15600 0x71CD0BF: __new_exitfn (cxa_atexit.c:114)
+  n12: 15600 0x71CD15B: __internal_atexit (cxa_atexit.c:44)
+   n1: 4160 0x4005623: call_init (dl-init.c:70)
+    n1: 4160 0x4005623: call_init (dl-init.c:26)
+     n1: 4160 0x400572B: _dl_init (dl-init.c:117)
+      n0: 4160 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A1185F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A134D3: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A1517F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A17307: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A1ABB7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A1D88B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A2020F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A22FB7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x4A2476B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x529BC4B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+   n1: 1040 0x529DAFB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 1040 0x4005623: call_init (dl-init.c:70)
+     n1: 1040 0x4005623: call_init (dl-init.c:26)
+      n1: 1040 0x400572B: _dl_init (dl-init.c:117)
+       n0: 1040 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 12300 0x66A39F7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 12300 0x664F81B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n2: 12300 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 12300 0x4A21DBB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 12300 0x4005623: call_init (dl-init.c:70)
+      n1: 12300 0x4005623: call_init (dl-init.c:26)
+       n1: 12300 0x400572B: _dl_init (dl-init.c:117)
+        n0: 12300 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+    n0: 0 in 5 places, all below massif's threshold (1.00%)
+ n0: 983 in 6 places, all below massif's threshold (1.00%)
+ n1: 800 0x66EB3D7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 800 0x66938E3: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 800 0x4A25EDF: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 800 0x4005623: call_init (dl-init.c:70)
+     n1: 800 0x4005623: call_init (dl-init.c:26)
+      n1: 800 0x400572B: _dl_init (dl-init.c:117)
+       n0: 800 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+#-----------
+snapshot=26
+#-----------
+time=1252791
+mem_heap_B=54834
+mem_heap_extra_B=8734
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=1266584
+mem_heap_B=56855
+mem_heap_extra_B=9121
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=1277544
+mem_heap_B=58699
+mem_heap_extra_B=9405
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=1293972
+mem_heap_B=60796
+mem_heap_extra_B=9852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=1304770
+mem_heap_B=61550
+mem_heap_extra_B=10098
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=1325131
+mem_heap_B=64252
+mem_heap_extra_B=10668
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=1341250
+mem_heap_B=66795
+mem_heap_extra_B=11181
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=1351994
+mem_heap_B=67520
+mem_heap_extra_B=11456
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=1362350
+mem_heap_B=69352
+mem_heap_extra_B=11744
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=1373374
+mem_heap_B=70137
+mem_heap_extra_B=12031
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=1383645
+mem_heap_B=71984
+mem_heap_extra_B=12312
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=1394227
+mem_heap_B=73777
+mem_heap_extra_B=12631
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=1405028
+mem_heap_B=74504
+mem_heap_extra_B=12944
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=1420561
+mem_heap_B=76999
+mem_heap_extra_B=13401
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=1439183
+mem_heap_B=101684
+mem_heap_extra_B=13468
+mem_stacks_B=0
+heap_tree=detailed
+n4: 101684 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 37274 0x672D3BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 30786 0x664F7E7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 30786 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n0: 30786 in 767 places, all below massif's threshold (1.00%)
+  n1: 3072 0x4DABDF7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 3072 0x4005623: call_init (dl-init.c:70)
+    n1: 3072 0x4005623: call_init (dl-init.c:26)
+     n1: 3072 0x400572B: _dl_init (dl-init.c:117)
+      n0: 3072 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+  n0: 1885 in 13 places, all below massif's threshold (1.00%)
+  n1: 1531 0x674B0C7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n0: 1531 in 8 places, all below massif's threshold (1.00%)
+ n1: 36888 0x66A39F7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 36888 0x664F81B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n3: 36888 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 24588 0x4A3647B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 24588 0x4005623: call_init (dl-init.c:70)
+      n1: 24588 0x4005623: call_init (dl-init.c:26)
+       n1: 24588 0x400572B: _dl_init (dl-init.c:117)
+        n0: 24588 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+    n1: 12300 0x4A21DBB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 12300 0x4005623: call_init (dl-init.c:70)
+      n1: 12300 0x4005623: call_init (dl-init.c:26)
+       n1: 12300 0x400572B: _dl_init (dl-init.c:117)
+        n0: 12300 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+    n0: 0 in 5 places, all below massif's threshold (1.00%)
+ n1: 26000 0x71CD0BF: __new_exitfn (cxa_atexit.c:114)
+  n2: 26000 0x71CD15B: __internal_atexit (cxa_atexit.c:44)
+   n0: 16640 in 16 places, all below massif's threshold (1.00%)
+   n1: 9360 0x4005623: call_init (dl-init.c:70)
+    n1: 9360 0x4005623: call_init (dl-init.c:26)
+     n1: 9360 0x400572B: _dl_init (dl-init.c:117)
+      n0: 9360 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n0: 1522 in 9 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=41
+#-----------
+time=1449496
+mem_heap_B=90377
+mem_heap_extra_B=13767
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=1459921
+mem_heap_B=92183
+mem_heap_extra_B=14001
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=1470118
+mem_heap_B=92930
+mem_heap_extra_B=14270
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=1485598
+mem_heap_B=95036
+mem_heap_extra_B=14732
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=1501205
+mem_heap_B=97181
+mem_heap_extra_B=15155
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=1516382
+mem_heap_B=99250
+mem_heap_extra_B=15590
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=1526551
+mem_heap_B=101034
+mem_heap_extra_B=15918
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=1541743
+mem_heap_B=102029
+mem_heap_extra_B=16315
+mem_stacks_B=0
+heap_tree=detailed
+n4: 102029 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 44719 0x672D3BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 37812 0x664F7E7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 37812 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n0: 37812 in 943 places, all below massif's threshold (1.00%)
+  n1: 3072 0x4DABDF7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 3072 0x4005623: call_init (dl-init.c:70)
+    n1: 3072 0x4005623: call_init (dl-init.c:26)
+     n1: 3072 0x400572B: _dl_init (dl-init.c:117)
+      n0: 3072 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+  n0: 1981 in 13 places, all below massif's threshold (1.00%)
+  n1: 1854 0x674B0C7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n0: 1854 in 11 places, all below massif's threshold (1.00%)
+ n1: 31200 0x71CD0BF: __new_exitfn (cxa_atexit.c:114)
+  n2: 31200 0x71CD15B: __internal_atexit (cxa_atexit.c:44)
+   n0: 21840 in 21 places, all below massif's threshold (1.00%)
+   n1: 9360 0x4005623: call_init (dl-init.c:70)
+    n1: 9360 0x4005623: call_init (dl-init.c:26)
+     n1: 9360 0x400572B: _dl_init (dl-init.c:117)
+      n0: 9360 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 24588 0x66A39F7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 24588 0x664F81B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n2: 24588 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 24588 0x4A3647B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 24588 0x4005623: call_init (dl-init.c:70)
+      n1: 24588 0x4005623: call_init (dl-init.c:26)
+       n1: 24588 0x400572B: _dl_init (dl-init.c:117)
+        n0: 24588 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+    n0: 0 in 6 places, all below massif's threshold (1.00%)
+ n0: 1522 in 9 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=1557468
+mem_heap_B=104143
+mem_heap_extra_B=16761
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=1566804
+mem_heap_B=105871
+mem_heap_extra_B=17009
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=1576140
+mem_heap_B=106612
+mem_heap_extra_B=17228
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=1585706
+mem_heap_B=108315
+mem_heap_extra_B=17477
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=1595987
+mem_heap_B=110324
+mem_heap_extra_B=17708
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=1605419
+mem_heap_B=112056
+mem_heap_extra_B=17984
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=1614845
+mem_heap_B=112867
+mem_heap_extra_B=18245
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=1624479
+mem_heap_B=114637
+mem_heap_extra_B=18523
+mem_stacks_B=0
+heap_tree=detailed
+n4: 114637 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 51923 0x672D3BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 43332 0x664F7E7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 43332 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n0: 43332 in 1074 places, all below massif's threshold (1.00%)
+  n0: 3399 in 16 places, all below massif's threshold (1.00%)
+  n1: 3072 0x4DABDF7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 3072 0x4005623: call_init (dl-init.c:70)
+    n1: 3072 0x4005623: call_init (dl-init.c:26)
+     n1: 3072 0x400572B: _dl_init (dl-init.c:117)
+      n0: 3072 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+  n1: 2120 0x674B0C7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n0: 2120 in 12 places, all below massif's threshold (1.00%)
+ n1: 36400 0x71CD0BF: __new_exitfn (cxa_atexit.c:114)
+  n2: 36400 0x71CD15B: __internal_atexit (cxa_atexit.c:44)
+   n0: 26000 in 25 places, all below massif's threshold (1.00%)
+   n1: 10400 0x4005623: call_init (dl-init.c:70)
+    n1: 10400 0x4005623: call_init (dl-init.c:26)
+     n1: 10400 0x400572B: _dl_init (dl-init.c:117)
+      n0: 10400 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 24588 0x66A39F7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 24588 0x664F81B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n2: 24588 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 24588 0x4A3647B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 24588 0x4005623: call_init (dl-init.c:70)
+      n1: 24588 0x4005623: call_init (dl-init.c:26)
+       n1: 24588 0x400572B: _dl_init (dl-init.c:117)
+        n0: 24588 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+    n0: 0 in 6 places, all below massif's threshold (1.00%)
+ n0: 1726 in 9 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=57
+#-----------
+time=1633806
+mem_heap_B=115311
+mem_heap_extra_B=18817
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=1634567
+mem_heap_B=115615
+mem_heap_extra_B=18833
+mem_stacks_B=0
+heap_tree=detailed
+n4: 115615 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 52901 0x672D3BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 43899 0x664F7E7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 43899 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n0: 43899 in 1091 places, all below massif's threshold (1.00%)
+  n0: 3703 in 16 places, all below massif's threshold (1.00%)
+  n1: 3072 0x4DABDF7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 3072 0x4005623: call_init (dl-init.c:70)
+    n1: 3072 0x4005623: call_init (dl-init.c:26)
+     n1: 3072 0x400572B: _dl_init (dl-init.c:117)
+      n0: 3072 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+  n1: 2227 0x674B0C7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n0: 2227 in 12 places, all below massif's threshold (1.00%)
+ n1: 36400 0x71CD0BF: __new_exitfn (cxa_atexit.c:114)
+  n2: 36400 0x71CD15B: __internal_atexit (cxa_atexit.c:44)
+   n0: 26000 in 25 places, all below massif's threshold (1.00%)
+   n1: 10400 0x4005623: call_init (dl-init.c:70)
+    n1: 10400 0x4005623: call_init (dl-init.c:26)
+     n1: 10400 0x400572B: _dl_init (dl-init.c:117)
+      n0: 10400 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 24588 0x66A39F7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 24588 0x664F81B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n2: 24588 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 24588 0x4A3647B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 24588 0x4005623: call_init (dl-init.c:70)
+      n1: 24588 0x4005623: call_init (dl-init.c:26)
+       n1: 24588 0x400572B: _dl_init (dl-init.c:117)
+        n0: 24588 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+    n0: 0 in 6 places, all below massif's threshold (1.00%)
+ n0: 1726 in 9 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=59
+#-----------
+time=1644056
+mem_heap_B=117138
+mem_heap_extra_B=19086
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=1653696
+mem_heap_B=117802
+mem_heap_extra_B=19310
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=1663266
+mem_heap_B=119495
+mem_heap_extra_B=19561
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=1672849
+mem_heap_B=120199
+mem_heap_extra_B=19825
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=1682325
+mem_heap_B=121913
+mem_heap_extra_B=20071
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=1692221
+mem_heap_B=122673
+mem_heap_extra_B=20319
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=1698391
+mem_heap_B=124485
+mem_heap_extra_B=20483
+mem_stacks_B=0
+heap_tree=detailed
+n4: 124485 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 57251 0x672D3BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 48349 0x664F7E7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 48349 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n0: 48349 in 1197 places, all below massif's threshold (1.00%)
+  n0: 3575 in 16 places, all below massif's threshold (1.00%)
+  n1: 3072 0x4DABDF7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 3072 0x4005623: call_init (dl-init.c:70)
+    n1: 3072 0x4005623: call_init (dl-init.c:26)
+     n1: 3072 0x400572B: _dl_init (dl-init.c:117)
+      n0: 3072 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+  n1: 2255 0x674B0C7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n0: 2255 in 13 places, all below massif's threshold (1.00%)
+ n1: 40560 0x71CD0BF: __new_exitfn (cxa_atexit.c:114)
+  n2: 40560 0x71CD15B: __internal_atexit (cxa_atexit.c:44)
+   n0: 27040 in 26 places, all below massif's threshold (1.00%)
+   n1: 13520 0x4005623: call_init (dl-init.c:70)
+    n1: 13520 0x4005623: call_init (dl-init.c:26)
+     n1: 13520 0x400572B: _dl_init (dl-init.c:117)
+      n0: 13520 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 24588 0x66A39F7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 24588 0x664F81B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n2: 24588 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 24588 0x4A3647B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 24588 0x4005623: call_init (dl-init.c:70)
+      n1: 24588 0x4005623: call_init (dl-init.c:26)
+       n1: 24588 0x400572B: _dl_init (dl-init.c:117)
+        n0: 24588 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+    n0: 0 in 6 places, all below massif's threshold (1.00%)
+ n0: 2086 in 9 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=66
+#-----------
+time=1707874
+mem_heap_B=124680
+mem_heap_extra_B=20680
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=1717561
+mem_heap_B=126266
+mem_heap_extra_B=20942
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=1735490
+mem_heap_B=126830
+mem_heap_extra_B=21082
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=1744841
+mem_heap_B=128410
+mem_heap_extra_B=21390
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=1754146
+mem_heap_B=203008
+mem_heap_extra_B=21528
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=1857528
+mem_heap_B=203008
+mem_heap_extra_B=21528
+mem_stacks_B=0
+heap_tree=detailed
+n5: 203008 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4A58D83: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 72704 0x4005623: call_init (dl-init.c:70)
+   n1: 72704 0x4005623: call_init (dl-init.c:26)
+    n1: 72704 0x400572B: _dl_init (dl-init.c:117)
+     n0: 72704 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n4: 59410 0x672D3BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n2: 50500 0x664F7E7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 50156 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n0: 50156 in 1248 places, all below massif's threshold (1.00%)
+   n0: 344 in 2 places, all below massif's threshold (1.00%)
+  n0: 3583 in 17 places, all below massif's threshold (1.00%)
+  n1: 3072 0x4DABDF7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 3072 0x4005623: call_init (dl-init.c:70)
+    n1: 3072 0x4005623: call_init (dl-init.c:26)
+     n1: 3072 0x400572B: _dl_init (dl-init.c:117)
+      n0: 3072 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+  n1: 2255 0x674B0C7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n0: 2255 in 13 places, all below massif's threshold (1.00%)
+ n1: 42640 0x71CD0BF: __new_exitfn (cxa_atexit.c:114)
+  n2: 42640 0x71CD15B: __internal_atexit (cxa_atexit.c:44)
+   n0: 28080 in 27 places, all below massif's threshold (1.00%)
+   n1: 14560 0x4005623: call_init (dl-init.c:70)
+    n1: 14560 0x4005623: call_init (dl-init.c:26)
+     n1: 14560 0x400572B: _dl_init (dl-init.c:117)
+      n0: 14560 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 24588 0x66A39F7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 24588 0x664F81B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n2: 24588 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 24588 0x4A3647B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 24588 0x4005623: call_init (dl-init.c:70)
+      n1: 24588 0x4005623: call_init (dl-init.c:26)
+       n1: 24588 0x400572B: _dl_init (dl-init.c:117)
+        n0: 24588 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+    n0: 0 in 6 places, all below massif's threshold (1.00%)
+ n0: 3666 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=72
+#-----------
+time=1867649
+mem_heap_B=204639
+mem_heap_extra_B=21625
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=1870547
+mem_heap_B=205975
+mem_heap_extra_B=21641
+mem_stacks_B=0
+heap_tree=detailed
+n6: 205975 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4A58D83: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 72704 0x4005623: call_init (dl-init.c:70)
+   n1: 72704 0x4005623: call_init (dl-init.c:26)
+    n1: 72704 0x400572B: _dl_init (dl-init.c:117)
+     n0: 72704 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n3: 59802 0x672D3BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n2: 50500 0x664F7E7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 50156 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n0: 50156 in 1248 places, all below massif's threshold (1.00%)
+   n0: 344 in 2 places, all below massif's threshold (1.00%)
+  n0: 6230 in 20 places, all below massif's threshold (1.00%)
+  n1: 3072 0x4DABDF7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 3072 0x4005623: call_init (dl-init.c:70)
+    n1: 3072 0x4005623: call_init (dl-init.c:26)
+     n1: 3072 0x400572B: _dl_init (dl-init.c:117)
+      n0: 3072 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 42640 0x71CD0BF: __new_exitfn (cxa_atexit.c:114)
+  n2: 42640 0x71CD15B: __internal_atexit (cxa_atexit.c:44)
+   n0: 28080 in 27 places, all below massif's threshold (1.00%)
+   n1: 14560 0x4005623: call_init (dl-init.c:70)
+    n1: 14560 0x4005623: call_init (dl-init.c:26)
+     n1: 14560 0x400572B: _dl_init (dl-init.c:117)
+      n0: 14560 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 24588 0x66A39F7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 24588 0x664F81B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n2: 24588 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 24588 0x4A3647B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 24588 0x4005623: call_init (dl-init.c:70)
+      n1: 24588 0x4005623: call_init (dl-init.c:26)
+       n1: 24588 0x400572B: _dl_init (dl-init.c:117)
+        n0: 24588 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+    n0: 0 in 6 places, all below massif's threshold (1.00%)
+ n0: 3681 in 25 places, all below massif's threshold (1.00%)
+ n1: 2560 0x1D4A9F: _ZN5alloc7raw_vec11finish_grow17hffa851282a0cc12fE.llvm.10780435030257279470 (in /workspaces/playground/memtest/target/release/wasmedge)
+  n1: 2560 0x1D5247: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /workspaces/playground/memtest/target/release/wasmedge)
+   n1: 2560 0x19EEDB: wast::parser::ParseBuffer::new_with_lexer (in /workspaces/playground/memtest/target/release/wasmedge)
+    n1: 2560 0x19EE27: wast::parser::ParseBuffer::new (in /workspaces/playground/memtest/target/release/wasmedge)
+     n1: 2560 0x198F17: wat::_parse_str (in /workspaces/playground/memtest/target/release/wasmedge)
+      n1: 2560 0x198E5B: wat::parse_bytes (in /workspaces/playground/memtest/target/release/wasmedge)
+       n1: 2560 0x190567: <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::fold (in /workspaces/playground/memtest/target/release/wasmedge)
+        n1: 2560 0x18FC57: <alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter (in /workspaces/playground/memtest/target/release/wasmedge)
+         n1: 2560 0x191617: wasmedge::main (in /workspaces/playground/memtest/target/release/wasmedge)
+          n1: 2560 0x18FF57: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/playground/memtest/target/release/wasmedge)
+           n1: 2560 0x190A8F: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h5ccd66b44a94f8dbE.llvm.434202450874583664 (in /workspaces/playground/memtest/target/release/wasmedge)
+            n1: 2560 0x24A067: std::rt::lang_start_internal (function.rs:287)
+             n0: 2560 0x191C9F: main (in /workspaces/playground/memtest/target/release/wasmedge)
+#-----------
+snapshot=74
+#-----------
+time=1879940
+mem_heap_B=205717
+mem_heap_extra_B=22635
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=1886853
+mem_heap_B=207685
+mem_heap_extra_B=23091
+mem_stacks_B=0
+heap_tree=detailed
+n6: 207685 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4A58D83: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 72704 0x4005623: call_init (dl-init.c:70)
+   n1: 72704 0x4005623: call_init (dl-init.c:26)
+    n1: 72704 0x400572B: _dl_init (dl-init.c:117)
+     n0: 72704 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n3: 59802 0x672D3BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n2: 50500 0x664F7E7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 50156 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n0: 50156 in 1248 places, all below massif's threshold (1.00%)
+   n0: 344 in 2 places, all below massif's threshold (1.00%)
+  n0: 6230 in 20 places, all below massif's threshold (1.00%)
+  n1: 3072 0x4DABDF7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 3072 0x4005623: call_init (dl-init.c:70)
+    n1: 3072 0x4005623: call_init (dl-init.c:26)
+     n1: 3072 0x400572B: _dl_init (dl-init.c:117)
+      n0: 3072 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 42640 0x71CD0BF: __new_exitfn (cxa_atexit.c:114)
+  n2: 42640 0x71CD15B: __internal_atexit (cxa_atexit.c:44)
+   n0: 28080 in 27 places, all below massif's threshold (1.00%)
+   n1: 14560 0x4005623: call_init (dl-init.c:70)
+    n1: 14560 0x4005623: call_init (dl-init.c:26)
+     n1: 14560 0x400572B: _dl_init (dl-init.c:117)
+      n0: 14560 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 24588 0x66A39F7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 24588 0x664F81B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n2: 24588 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 24588 0x4A3647B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 24588 0x4005623: call_init (dl-init.c:70)
+      n1: 24588 0x4005623: call_init (dl-init.c:26)
+       n1: 24588 0x400572B: _dl_init (dl-init.c:117)
+        n0: 24588 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+    n0: 0 in 6 places, all below massif's threshold (1.00%)
+ n0: 5615 in 30 places, all below massif's threshold (1.00%)
+ n1: 2336 0x1D4ACB: _ZN5alloc7raw_vec11finish_grow17hffa851282a0cc12fE.llvm.10780435030257279470 (in /workspaces/playground/memtest/target/release/wasmedge)
+  n0: 2336 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=76
+#-----------
+time=1896148
+mem_heap_B=207205
+mem_heap_extra_B=23155
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=1906181
+mem_heap_B=204778
+mem_heap_extra_B=21790
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=1915942
+mem_heap_B=239042
+mem_heap_extra_B=21998
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=1917454
+mem_heap_B=239240
+mem_heap_extra_B=22040
+mem_stacks_B=0
+heap_tree=peak
+n5: 239240 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 96213 0x672D3BB: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n2: 50500 0x664F7E7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 50156 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n0: 50156 in 1248 places, all below massif's threshold (1.00%)
+   n0: 344 in 2 places, all below massif's threshold (1.00%)
+  n1: 32768 0x4ABB57B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 32768 0x4A5D7FF: WasmEdge_ExecutorRegister (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 32768 0x191D0F: wasmedge_sys::executor::Executor::register_named_module (in /workspaces/playground/memtest/target/release/wasmedge)
+     n1: 32768 0x1902CF: <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::fold (in /workspaces/playground/memtest/target/release/wasmedge)
+      n1: 32768 0x18FA8F: <alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter (in /workspaces/playground/memtest/target/release/wasmedge)
+       n1: 32768 0x191667: wasmedge::main (in /workspaces/playground/memtest/target/release/wasmedge)
+        n1: 32768 0x18FF57: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/playground/memtest/target/release/wasmedge)
+         n1: 32768 0x190A8F: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h5ccd66b44a94f8dbE.llvm.434202450874583664 (in /workspaces/playground/memtest/target/release/wasmedge)
+          n1: 32768 0x24A067: std::rt::lang_start_internal (function.rs:287)
+           n0: 32768 0x191C9F: main (in /workspaces/playground/memtest/target/release/wasmedge)
+  n0: 9873 in 57 places, all below massif's threshold (1.00%)
+  n1: 3072 0x4DABDF7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n1: 3072 0x4005623: call_init (dl-init.c:70)
+    n1: 3072 0x4005623: call_init (dl-init.c:26)
+     n1: 3072 0x400572B: _dl_init (dl-init.c:117)
+      n0: 3072 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 72704 0x4A58D83: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 72704 0x4005623: call_init (dl-init.c:70)
+   n1: 72704 0x4005623: call_init (dl-init.c:26)
+    n1: 72704 0x400572B: _dl_init (dl-init.c:117)
+     n0: 72704 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 42640 0x71CD0BF: __new_exitfn (cxa_atexit.c:114)
+  n2: 42640 0x71CD15B: __internal_atexit (cxa_atexit.c:44)
+   n0: 28080 in 27 places, all below massif's threshold (1.00%)
+   n1: 14560 0x4005623: call_init (dl-init.c:70)
+    n1: 14560 0x4005623: call_init (dl-init.c:26)
+     n1: 14560 0x400572B: _dl_init (dl-init.c:117)
+      n0: 14560 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+ n1: 24588 0x66A39F7: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+  n1: 24588 0x664F81B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+   n2: 24588 0x664FA3F: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+    n1: 24588 0x4A3647B: ??? (in /home/vscode/.wasmedge/lib/libwasmedge.so.0.0.1)
+     n1: 24588 0x4005623: call_init (dl-init.c:70)
+      n1: 24588 0x4005623: call_init (dl-init.c:26)
+       n1: 24588 0x400572B: _dl_init (dl-init.c:117)
+        n0: 24588 0x4017C87: ??? (in /usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1)
+    n0: 0 in 6 places, all below massif's threshold (1.00%)
+ n0: 3095 in 46 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=80
+#-----------
+time=1926828
+mem_heap_B=240996
+mem_heap_extra_B=22428
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=1978101
+mem_heap_B=201244
+mem_heap_extra_B=21484
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=82
+#-----------
+time=1994263
+mem_heap_B=201175
+mem_heap_extra_B=21441
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=83
+#-----------
+time=2023213
+mem_heap_B=201078
+mem_heap_extra_B=21402
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=84
+#-----------
+time=2037919
+mem_heap_B=199559
+mem_heap_extra_B=21057
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=85
+#-----------
+time=2054619
+mem_heap_B=199506
+mem_heap_extra_B=21030
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=86
+#-----------
+time=2064955
+mem_heap_B=199370
+mem_heap_extra_B=20942
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=87
+#-----------
+time=2132099
+mem_heap_B=198070
+mem_heap_extra_B=20770
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=88
+#-----------
+time=2141675
+mem_heap_B=173110
+mem_heap_extra_B=20578
+mem_stacks_B=0
+heap_tree=empty
