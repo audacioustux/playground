@@ -27,50 +27,42 @@ fn main() -> Result<(), Error> {
 
         Ok(module)
     };
-    let mut store = Store::new()?;
-    let mut executor = wasmedge_sdk::Executor::new(None, None).unwrap();
 
     thread::sleep(std::time::Duration::from_secs(2));
 
     let start = std::time::Instant::now();
 
-    let module_count = 1;
+    let module_count = 1_000_000;
 
     println!("Generating {} modules", module_count);
     let modules: Vec<Module> = (0..module_count).map(|i| module_gen(i).unwrap()).collect();
 
     println!("Registering modules");
-    let instances: Vec<Instance> = modules
+    let mut instances: Vec<_> = modules
         .iter()
         .enumerate()
         .map(|(i, module)| {
+            let mut store = Store::new().unwrap();
+            let mut executor = wasmedge_sdk::Executor::new(None, None).unwrap();
             let noop = store
                 .register_named_module(&mut executor, format!("noop{}", i), &module)
                 .unwrap();
-            noop
+            (noop, executor)
         })
         .collect();
 
     println!("Calling modules...");
-    let funcs: Vec<_> = instances
-        .iter()
+    let i = instances
+        .iter_mut()
         .enumerate()
-        .map(|(i, instance)| {
-            instance.func(format!("foo{}", i)).expect("foo not found")
-            // instance
-            //     .get_typed_func::<i32, i32>(&mut executor, "foo")
-            //     .unwrap()
-        })
-        .collect();
-
-    let mut i = 1;
-    for foo in funcs.iter() {
-        i = foo
-            .call(&mut executor, params!(i))?
-            .get(0)
-            .unwrap()
-            .to_i32();
-    }
+        .fold(1, |count, (i, (instance, executor))| {
+            let foo = instance.func(format!("foo{}", i)).expect("foo not found");
+            foo.call(executor, params!(count))
+                .unwrap()
+                .get(0)
+                .unwrap()
+                .to_i32()
+        });
 
     println!("i = {}", i);
     println!("Elapsed: {}ms", start.elapsed().as_millis());
