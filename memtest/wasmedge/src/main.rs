@@ -1,9 +1,7 @@
-use std::{thread};
+use std::thread;
 
 use anyhow::{Error, Ok};
-use wasmedge_sdk::{
-    params, wat2wasm, Module, Store, WasmVal,
-};
+use wasmedge_sdk::{params, wat2wasm, Instance, Module, Store, WasmVal};
 
 fn main() -> Result<(), Error> {
     let module_codegen = |i| -> String {
@@ -30,19 +28,43 @@ fn main() -> Result<(), Error> {
         Ok(module)
     };
     let mut store = Store::new()?;
+    let mut executor = wasmedge_sdk::Executor::new(None, None).unwrap();
 
     thread::sleep(std::time::Duration::from_secs(2));
 
     let start = std::time::Instant::now();
 
-    let module_count = 10_000;
+    let module_count = 1_000_000;
+
+    println!("Generating {} modules", module_count);
+    let modules: Vec<Module> = (0..module_count).map(|i| module_gen(i).unwrap()).collect();
+
+    println!("Registering modules");
+    let instances: Vec<Instance> = modules
+        .iter()
+        .enumerate()
+        .map(|(i, module)| {
+            let noop = store
+                .register_named_module(&mut executor, format!("noop{}", i), &module)
+                .unwrap();
+            noop
+        })
+        .collect();
+
+    println!("Calling modules...");
+    let funcs: Vec<_> = instances
+        .iter()
+        .enumerate()
+        .map(|(i, instance)| {
+            instance.func(format!("foo{}", i)).expect("foo not found")
+            // instance
+            //     .get_typed_func::<i32, i32>(&mut executor, "foo")
+            //     .unwrap()
+        })
+        .collect();
 
     let mut i = 1;
-    while i < module_count {
-        let mut executor = wasmedge_sdk::Executor::new(None, None)?;
-        let noop =
-            store.register_named_module(&mut executor, format!("noop{}", i), &module_gen(i)?)?;
-        let foo = noop.func(format!("foo{}", i)).expect("foo not found");
+    for foo in funcs.iter() {
         i = foo
             .call(&mut executor, params!(i))?
             .get(0)
