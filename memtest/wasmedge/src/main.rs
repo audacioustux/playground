@@ -1,7 +1,7 @@
 use std::thread;
 
 use anyhow::{Error, Ok};
-use wasmedge_sdk::{params, wat2wasm, Instance, Module, Store, WasmVal};
+use wasmedge_sdk::{params, wat2wasm, Module, Store, WasmVal};
 
 fn main() -> Result<(), Error> {
     let module_codegen = |i| -> String {
@@ -30,13 +30,12 @@ fn main() -> Result<(), Error> {
 
     thread::sleep(std::time::Duration::from_secs(2));
 
-    let start = std::time::Instant::now();
-
     let module_count = 1_000_000;
 
     println!("Generating {} modules", module_count);
     let modules: Vec<Module> = (0..module_count).map(|i| module_gen(i).unwrap()).collect();
 
+    let start = std::time::Instant::now();
     println!("Registering modules");
     let mut instances: Vec<_> = modules
         .iter()
@@ -50,8 +49,10 @@ fn main() -> Result<(), Error> {
             (noop, executor)
         })
         .collect();
+    println!("Elapsed: {}ms", start.elapsed().as_millis());
 
     println!("Calling modules...");
+    let start = std::time::Instant::now();
     let i = instances
         .iter_mut()
         .enumerate()
@@ -63,9 +64,9 @@ fn main() -> Result<(), Error> {
                 .unwrap()
                 .to_i32()
         });
+    println!("Elapsed: {}ms", start.elapsed().as_millis());
 
     println!("i = {}", i);
-    println!("Elapsed: {}ms", start.elapsed().as_millis());
 
     thread::sleep(std::time::Duration::from_secs(5));
 

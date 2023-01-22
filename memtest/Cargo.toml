@@ -1,2 +1,2 @@
 [workspace]
-members = ["wasmtime", "wasmedge"]
+members = ["wasmtime", "wasmedge", "wasmedge-aot"]

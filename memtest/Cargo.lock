@@ -1208,6 +1208,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "wasmedge-aot"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "wasmedge-sdk",
+]
+
+[[package]]
 name = "wasmedge-macro"
 version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
