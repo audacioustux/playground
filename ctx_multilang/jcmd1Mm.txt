@@ -1,0 +1,189 @@
+Loading WASM modules...
+after loading jcmd summary
+7417:
+
+Native Memory Tracking:
+
+(Omitting categories weighting less than 1KB)
+
+Total: reserved=7955740KB +29120KB, committed=6665976KB +6474420KB
+
+-                 Java Heap (reserved=6291456KB, committed=6291456KB +6209536KB)
+                            (mmap: reserved=6291456KB, committed=6291456KB +6209536KB)
+ 
+-                     Class (reserved=1048920KB +74KB, committed=1752KB +330KB)
+                            (classes #3180 +514)
+                            (  instance classes #2893 +473, array classes #287 +41)
+                            (malloc=344KB +74KB #7421 +2274)
+                            (mmap: reserved=1048576KB, committed=1408KB +256KB)
+                           : (  Metadata)
+                            (    reserved=16384KB, committed=11776KB +2688KB)
+                            (    used=11601KB +2584KB)
+                            (    waste=175KB =1.48% +104KB)
+                           : (  Class space)
+                            (    reserved=1048576KB, committed=1408KB +256KB)
+                            (    used=1268KB +288KB)
+                            (    waste=140KB =9.92% -32KB)
+ 
+-                    Thread (reserved=27855KB +2KB, committed=27855KB +2KB)
+                            (thread #0)
+                            (stack: reserved=27792KB, committed=27792KB)
+                            (malloc=35KB #160 +6)
+                            (arena=29KB +2 #50 +3)
+ 
+-                      Code (reserved=248297KB +392KB, committed=10549KB +2780KB)
+                            (malloc=613KB +392KB #3448 +1206)
+                            (mmap: reserved=247684KB, committed=9936KB +2388KB)
+ 
+-                        GC (reserved=303869KB +28141KB, committed=303869KB +258573KB)
+                            (malloc=37421KB +28141KB #17944 +16843)
+                            (mmap: reserved=266448KB, committed=266448KB +230432KB)
+ 
+-                  Compiler (reserved=174KB +21KB, committed=174KB +21KB)
+                            (malloc=43KB +22KB #191 +94)
+                            (arena=132KB -1 #4 -1)
+ 
+-                     JVMCI (reserved=25KB +15KB, committed=25KB +15KB)
+                            (malloc=25KB +15KB #73 +31)
+ 
+-                  Internal (reserved=419KB +161KB, committed=419KB +161KB)
+                            (malloc=387KB +161KB #7049 +4433)
+                            (mmap: reserved=32KB, committed=32KB)
+ 
+-                     Other (reserved=10KB, committed=10KB)
+                            (malloc=10KB #2)
+ 
+-                    Symbol (reserved=2997KB +238KB, committed=2997KB +238KB)
+                            (malloc=2637KB +238KB #60514 +7141)
+                            (arena=360KB #1)
+ 
+-    Native Memory Tracking (reserved=1755KB +631KB, committed=1755KB +631KB)
+                            (malloc=6KB +1KB #90 +18)
+                            (tracking overhead=1749KB +630KB)
+ 
+-        Shared class space (reserved=12288KB, committed=12048KB)
+                            (mmap: reserved=12288KB, committed=12048KB)
+ 
+-               Arena Chunk (reserved=166KB -1084KB, committed=166KB -1084KB)
+                            (malloc=166KB -1084KB)
+ 
+-                   Logging (reserved=5KB, committed=5KB)
+                            (malloc=5KB #218)
+ 
+-                 Arguments (reserved=2KB, committed=2KB)
+                            (malloc=2KB #59)
+ 
+-                    Module (reserved=273KB, committed=273KB)
+                            (malloc=273KB #2004 +8)
+ 
+-                 Safepoint (reserved=8KB, committed=8KB)
+                            (mmap: reserved=8KB, committed=8KB)
+ 
+-           Synchronization (reserved=780KB +517KB, committed=780KB +517KB)
+                            (malloc=780KB +517KB #12612 +8293)
+ 
+-            Serviceability (reserved=1KB, committed=1KB)
+                            (malloc=1KB #14)
+ 
+-                 Metaspace (reserved=16439KB +11KB, committed=11831KB +2699KB)
+                            (malloc=55KB +11KB #40 +7)
+                            (mmap: reserved=16384KB, committed=11776KB +2688KB)
+ 
+-      String Deduplication (reserved=1KB, committed=1KB)
+                            (malloc=1KB #8)
+ 
+Executing WASM modules...
+after execution jcmd summary
+7417:
+
+Native Memory Tracking:
+
+(Omitting categories weighting less than 1KB)
+
+Total: reserved=7960880KB +34260KB, committed=6673368KB +6481812KB
+
+-                 Java Heap (reserved=6291456KB, committed=6291456KB +6209536KB)
+                            (mmap: reserved=6291456KB, committed=6291456KB +6209536KB)
+ 
+-                     Class (reserved=1048933KB +87KB, committed=1829KB +407KB)
+                            (classes #3326 +660)
+                            (  instance classes #3034 +614, array classes #292 +46)
+                            (malloc=357KB +87KB #7412 +2265)
+                            (mmap: reserved=1048576KB, committed=1472KB +320KB)
+                           : (  Metadata)
+                            (    reserved=16384KB, committed=12544KB +3456KB)
+                            (    used=12453KB +3436KB)
+                            (    waste=91KB =0.72% +20KB)
+                           : (  Class space)
+                            (    reserved=1048576KB, committed=1472KB +320KB)
+                            (    used=1357KB +377KB)
+                            (    waste=115KB =7.80% -57KB)
+ 
+-                    Thread (reserved=27855KB +2KB, committed=27855KB +2KB)
+                            (thread #0)
+                            (stack: reserved=27792KB, committed=27792KB)
+                            (malloc=35KB #160 +6)
+                            (arena=29KB +2 #50 +3)
+ 
+-                      Code (reserved=248225KB +319KB, committed=11897KB +4127KB)
+                            (malloc=541KB +319KB #3320 +1078)
+                            (mmap: reserved=247684KB, committed=11356KB +3808KB)
+ 
+-                        GC (reserved=308747KB +33019KB, committed=308747KB +263451KB)
+                            (malloc=42299KB +33019KB #18642 +17541)
+                            (mmap: reserved=266448KB, committed=266448KB +230432KB)
+ 
+-                  Compiler (reserved=177KB +24KB, committed=177KB +24KB)
+                            (malloc=46KB +25KB #247 +150)
+                            (arena=132KB -1 #4 -1)
+ 
+-                     JVMCI (reserved=41KB +31KB, committed=41KB +31KB)
+                            (malloc=41KB +31KB #107 +65)
+ 
+-                  Internal (reserved=463KB +205KB, committed=463KB +205KB)
+                            (malloc=431KB +205KB #7750 +5134)
+                            (mmap: reserved=32KB, committed=32KB)
+ 
+-                     Other (reserved=10KB, committed=10KB)
+                            (malloc=10KB #5 +3)
+ 
+-                    Symbol (reserved=3098KB +339KB, committed=3098KB +339KB)
+                            (malloc=2706KB +307KB #62624 +9251)
+                            (arena=392KB +32 #1)
+ 
+-    Native Memory Tracking (reserved=1828KB +704KB, committed=1828KB +704KB)
+                            (malloc=6KB +1KB #93 +21)
+                            (tracking overhead=1821KB +702KB)
+ 
+-        Shared class space (reserved=12288KB, committed=12048KB)
+                            (mmap: reserved=12288KB, committed=12048KB)
+ 
+-               Arena Chunk (reserved=166KB -1084KB, committed=166KB -1084KB)
+                            (malloc=166KB -1084KB)
+ 
+-                   Logging (reserved=5KB, committed=5KB)
+                            (malloc=5KB #218)
+ 
+-                 Arguments (reserved=2KB, committed=2KB)
+                            (malloc=2KB #59)
+ 
+-                    Module (reserved=276KB +3KB, committed=276KB +3KB)
+                            (malloc=276KB +3KB #2014 +18)
+ 
+-                 Safepoint (reserved=8KB, committed=8KB)
+                            (mmap: reserved=8KB, committed=8KB)
+ 
+-           Synchronization (reserved=851KB +588KB, committed=851KB +588KB)
+                            (malloc=851KB +588KB #13754 +9435)
+ 
+-            Serviceability (reserved=1KB, committed=1KB)
+                            (malloc=1KB #14)
+ 
+-                 Metaspace (reserved=16451KB +23KB, committed=12611KB +3479KB)
+                            (malloc=67KB +23KB #51 +18)
+                            (mmap: reserved=16384KB, committed=12544KB +3456KB)
+ 
+-      String Deduplication (reserved=1KB, committed=1KB)
+                            (malloc=1KB #8)
+ 
+1
