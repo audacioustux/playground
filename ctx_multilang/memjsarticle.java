@@ -2,13 +2,14 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 import org.graalvm.polyglot.Context;
 import org.graalvm.polyglot.Context.Builder;
 import org.graalvm.polyglot.Engine;
 import org.graalvm.polyglot.Source;
 import org.graalvm.polyglot.Value;
-import org.graalvm.polyglot.io.ByteSequence;
 
 class Main {
 	
@@ -35,25 +36,28 @@ class Main {
 							.waitFor();
 	}
 
-	static void wasm(Context context, byte[] binary, int moduleCount) throws IOException, InterruptedException {
+	static void js(Context context, String code, int moduleCount) throws IOException, InterruptedException {
 
 		jcmdbaseline();
 
 		System.out.println("Loading WASM modules...");
+
+		List<Value> modules = new ArrayList<>();
 		for (int i = 0; i < moduleCount; i++) {
-			Source.Builder sourceBuilder = Source.newBuilder("wasm", ByteSequence.create(binary), i + "article.wasm");
+			Source.Builder sourceBuilder = Source.newBuilder("js", code, i + "noop.js")
+      			.mimeType("application/javascript+module");
 			Source source = sourceBuilder.build();
-			context.eval(source);
+			modules.add(context.eval(source));
 		}
 
 		System.out.println("after loading jcmd summary");
 		jcmdsummary();
 
-		System.out.println("Executing WASM modules...");
-
-		Value i = context.getBindings("wasm").getMember("main").getMember("foo").execute(1);
+		System.out.println("Executing js modules...");
+		
+		Value i = modules.get(0).getMember("foo").execute(1);
 		for (int j = 1; j < moduleCount; j++) {
-			i = context.getBindings("wasm").getMember(j + "article.wasm").getMember("foo").execute(i);
+			i = modules.get(j).getMember("foo").execute(i);
 		}
 
 		System.out.println("after execution jcmd summary");
@@ -61,8 +65,7 @@ class Main {
 
 		if (moduleCount > 1) {
 			int randomNumber = new Random().nextInt(moduleCount - 1) + 1;
-			String randomModuleName = randomNumber + "article.wasm";
-			i = context.getBindings("wasm").getMember(randomModuleName).getMember("foo").execute(i);
+			i = modules.get(randomNumber).getMember("foo").execute(i);
 		}
 
 		System.out.println(i.asInt());
@@ -73,16 +76,19 @@ class Main {
 		if (dowait) Thread.sleep(Duration.ofSeconds(10).toMillis());
 
 		Engine engine = Engine.create();
-		Builder builder = Context
-			.newBuilder()
+		Builder builder = Context.newBuilder()
 			.allowAllAccess(true)
-			.option("wasm.Builtins", "wasi_snapshot_preview1")
-			.engine(engine);
+			.allowExperimentalOptions(true)
+   	       	.option("js.esm-eval-returns-exports", "true")
+		  	.engine(engine);
+		// .option("wasm.Builtins", "wasi_snapshot_preview1");
 
-		byte[] binary = Files.readAllBytes(Paths.get("../wasm-latency/slugify.opt.wasm"));
+		// byte[] binary = Files.readAllBytes(Paths.get("../wasm-latency/noop.wasm"));
+
+		String code = Files.readString(Paths.get("./slugify.mjs"));
 
 		try (Context context = builder.build()) {
-			wasm(context, binary, 5_000);
+			js(context, code, 5_000);
 		}
 	}
 }
