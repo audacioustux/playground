@@ -4,7 +4,6 @@ import java.nio.file.Paths;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 import org.graalvm.polyglot.Context;
 import org.graalvm.polyglot.Context.Builder;
 import org.graalvm.polyglot.Engine;
@@ -38,9 +37,9 @@ class Main {
 
 	static void js(Context context, String code, int moduleCount) throws IOException, InterruptedException {
 
-		jcmdbaseline();
+		// jcmdbaseline();
 
-		System.out.println("Loading WASM modules...");
+		// System.out.println("Loading WASM modules...");
 
 		List<Value> modules = new ArrayList<>();
 		for (int i = 0; i < moduleCount; i++) {
@@ -50,25 +49,25 @@ class Main {
 			modules.add(context.eval(source));
 		}
 
-		System.out.println("after loading jcmd summary");
-		jcmdsummary();
+		// System.out.println("after loading jcmd summary");
+		// jcmdsummary();
 
-		System.out.println("Executing js modules...");
+		// System.out.println("Executing js modules...");
 		
 		Value i = modules.get(0).getMember("foo").execute(1);
 		for (int j = 1; j < moduleCount; j++) {
 			i = modules.get(j).getMember("foo").execute(i);
 		}
 
-		System.out.println("after execution jcmd summary");
-		jcmdsummary();
+		// System.out.println("after execution jcmd summary");
+		// jcmdsummary();
 
-		if (moduleCount > 1) {
-			int randomNumber = new Random().nextInt(moduleCount - 1) + 1;
-			i = modules.get(randomNumber).getMember("foo").execute(i);
-		}
+		// if (moduleCount > 1) {
+		// 	int randomNumber = new Random().nextInt(moduleCount - 1) + 1;
+		// 	i = modules.get(randomNumber).getMember("foo").execute(i);
+		// }
 
-		System.out.println(i.asInt());
+		// System.out.println(i.asInt());
 	}
 
 	public static void main(String[] args) throws IOException, InterruptedException {
@@ -79,16 +78,24 @@ class Main {
 		Builder builder = Context.newBuilder()
 			.allowAllAccess(true)
 			.allowExperimentalOptions(true)
-   	       	.option("js.esm-eval-returns-exports", "true")
-		  	.engine(engine);
+   	       	.option("js.esm-eval-returns-exports", "true");
+		  	// .engine(engine);
 		// .option("wasm.Builtins", "wasi_snapshot_preview1");
 
 		// byte[] binary = Files.readAllBytes(Paths.get("../wasm-latency/noop.wasm"));
 
 		String code = Files.readString(Paths.get("./slugify.mjs"));
 
-		try (Context context = builder.build()) {
-			js(context, code, 5_000);
+		// try (Context context = builder.build()) {
+		// 	js(context, code, 5_000);
+		// }
+
+		List<Context> contexts = new ArrayList<>();
+		for (int i = 0; i < 5000; i++) {
+			contexts.add(builder.build());
+		}
+		for (Context context : contexts) {
+			js(context, code, 1);
 		}
 	}
 }

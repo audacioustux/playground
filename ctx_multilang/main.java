@@ -1,12 +1,12 @@
-import org.graalvm.polyglot.Context;
-import org.graalvm.polyglot.Value;
-import org.graalvm.polyglot.Source;
-import org.graalvm.polyglot.Engine;
-import org.graalvm.polyglot.Context.Builder;
-import org.graalvm.polyglot.io.ByteSequence;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import org.graalvm.polyglot.Context;
+import org.graalvm.polyglot.Context.Builder;
+import org.graalvm.polyglot.Engine;
+import org.graalvm.polyglot.Source;
+import org.graalvm.polyglot.Value;
+import org.graalvm.polyglot.io.ByteSequence;
 
 class Main {
 
