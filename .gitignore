@@ -1,3 +1,5 @@
 **/.metals
 **/*.class
 **/*.wasm
+
+/wamr-poc
