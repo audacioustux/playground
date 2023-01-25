@@ -21,7 +21,9 @@ class Main {
         Value foo = context.getBindings("wasm").getMember("main").getMember("foo");
         System.out.println("Warming...");
 
-        Value i = foo.execute(0);
+        int nth = 10_000;
+
+        Value i = foo.execute(nth);
         for (int j = 0; j < count; j++) {
             i = foo.execute(i);
         }
@@ -29,7 +31,7 @@ class Main {
         System.out.println("Executing WASM modules...");
         long startTime = System.nanoTime();
 
-        i = foo.execute(0);
+        i = foo.execute(nth);
         for (int j = 0; j < count; j++) {
             i = foo.execute(i);
         }
@@ -55,11 +57,11 @@ class Main {
 
                 // Load the WASM contents into a byte array
                 // byte[] binary = Files.readAllBytes(Paths.get("floyd.wasm"));
-                byte[] binary = Files.readAllBytes(Paths.get("../wasm-latency/slugify.opt.wasm"));
+                byte[] binary = Files.readAllBytes(Paths.get("../wasm-latency/nth_prime.wasm"));
 
                 // Source.Builder sourceBuilder = Source.newBuilder("wasm",
                 // ByteSequence.create(binary), "floyd.wasm");
-                wasm(context, binary, 100_000_000);
+                wasm(context, binary, 10_000);
             }
         }
     }
