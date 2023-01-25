@@ -20,17 +20,17 @@ class Main {
 
         Value foo = context.getBindings("wasm").getMember("main").getMember("foo");
         System.out.println("Warming...");
+
         Value i = foo.execute(0);
-        while (i.asInt() < count) {
+        for (int j = 0; j < count; j++) {
             i = foo.execute(i);
         }
 
         System.out.println("Executing WASM modules...");
-
         long startTime = System.nanoTime();
 
         i = foo.execute(0);
-        while (i.asInt() < count) {
+        for (int j = 0; j < count; j++) {
             i = foo.execute(i);
         }
 
@@ -54,7 +54,7 @@ class Main {
 
                 // Load the WASM contents into a byte array
                 // byte[] binary = Files.readAllBytes(Paths.get("floyd.wasm"));
-                byte[] binary = Files.readAllBytes(Paths.get("../wasm-latency/noop.wasm"));
+                byte[] binary = Files.readAllBytes(Paths.get("../wasm-latency/articlewasm.wasm"));
 
                 // Source.Builder sourceBuilder = Source.newBuilder("wasm",
                 // ByteSequence.create(binary), "floyd.wasm");
